@@ -1,0 +1,50 @@
+<div class="footer">
+
+  <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+          <img alt="Lotu" src="https://www.lotu.de/images/gallery/logos/lotu_5a_website.png" class="img-fluid" width="100">
+          <p>Ihr Bootszubehör Onlineshop aus Düsseldorf</p>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+
+          <ul>
+            <h3>Kontakt</h3>
+            <li><a href="{{ urls.contact }}">Kontaktformular</a></li>
+            <li><a class="telefonNummerFooter" href="tel: +49 211 50661662">+49 (0)211 50661662</a></li>
+            <li><a href="mailto:info@lotu.de">info@lotu.de</a></li>
+          </ul>
+
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+
+          <ul>
+            <h3>Wichtige Links</h3>
+            <li><a href="/zahlungsarten">Zahlungsarten</a></li>
+            <li><a href="/versand">Versand</a></li>
+            <li><a href="/retoure">Retoure</a></li>
+          </ul>
+
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+
+          <ul>
+            <h3>Rechtliches</h3>
+            <li><a href="{{ urls.gtc }}">AGB</a></li>
+            <li><a href="{{ urls.privacyPolicy }}">Datenschutzerklärung</a></li>
+            <li><a href="{{ urls.legalDisclosure }}">Impressum</a></li>
+            <li><a href="{{ urls.cancellationRights }}">Widerrufsrecht</a></li>
+            <li><a href="/documents/widerrufsform/widerrufsformular.pdf">Widerrufsformular</a></li>
+
+
+
+          </ul>
+        </div>
+        <div class="copyright text-xs-center m-y-1">
+          <small>&copy; Copyright {{ "now" | date("Y") }} | {{ trans("Ceres::Template.footerAllRightsReserved") }}</small>
+        </div>
+
+      </div>
+  </div>
+
+</div>

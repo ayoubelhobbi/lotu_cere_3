@@ -1,0 +1,20 @@
+{
+    "version"           :   "0.0.1",
+    "license"           :   "MIT",
+    "name"              :   "LotuTheme",
+    "shortDescription"  :   { "de": "Ein Theme für Plentymarkets Version 16 ", "en": "Lotu Theme for Ceres 16" },
+    "namespace"         :   "LotuTheme",
+    "author"            :   "Ayoub El Hobbi",
+    "price"             :   0,
+    "categories"        :   [3518],
+    "type"              :   "theme",
+    "serviceProvider"   :   "LotuTheme\\Providers\\LotuThemeServiceProvider",
+    "dataProviders"     :
+    [
+        {
+            "key"           :"LotuTheme\\Containers\\LotuThemeContainer",
+            "name"          :"Generated plugin container",
+            "description"   :"Add changes to the CSS file"
+        }
+    ]
+}
