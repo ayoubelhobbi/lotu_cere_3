@@ -10,11 +10,11 @@
     "price"             :   0.00,
     "categories"        :   [3518],
     "type"              :   "theme",
-    "serviceProvider"   :   "Stoune\\Providers\\ThemeServiceProvider",
+    "serviceProvider"   :   "Stoune\\Providers\\StouneServiceProvider",
     "dataProviders"     :
     [
         {
-            "key"           :"Stoune\\Containers\\ThemeContainer",
+            "key"           :"Stoune\\Containers\\StouneContainer",
             "name"          :"Stoune Theme",
             "description"   :"Add changes to the CSS file"
         }
