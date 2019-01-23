@@ -41,14 +41,14 @@ class LotuThemeServiceProvider extends ServiceProvider
           /* Skripte einbinden  */
       $dispatcher->listen('IO.Resources.Import', function (ResourceContainer $container)
        {
-           $container->addScriptTemplate('LotuTheme::ThemeScript');
+           $container->addScriptTemplate('LotuTheme3::ThemeScript');
        }, self::PRIORITY);
 
           /* Footer überschreiben  */
       $dispatcher->listen('IO.init.templates', function(Partial $partial)
 			 {
-					$partial->set('footer', 'LotuTheme::ThemeFooter');
-          $partial->set( 'page-design', 'LotuTheme::PageDesign.PageDesign' );
+					$partial->set('footer', 'LotuTheme3::ThemeFooter');
+          $partial->set( 'page-design', 'LotuTheme3::PageDesign.PageDesign' );
 			 }, 0);
 
           /* SingleItem überschreiben */
@@ -56,14 +56,14 @@ class LotuThemeServiceProvider extends ServiceProvider
 			 {
 					 if ($container->getOriginComponentTemplate()=='Ceres::Item.Components.SingleItem')
 					 {
-							 $container->setNewComponentTemplate('LotuTheme::Item.SingleItem');
+							 $container->setNewComponentTemplate('LotuTheme3::Item.SingleItem');
 					 }
 			 }, self::PRIORITY);
 
           /* ResultFields SingleItemWrapper überschreiben  */
        $dispatcher->listen( 'IO.ResultFields.*', function(ResultFieldTemplate $templateContainer) {
       $templateContainer->setTemplates([
-          ResultFieldTemplate::TEMPLATE_SINGLE_ITEM   => 'LotuTheme::ResultFields.SingleItemWrapper'
+          ResultFieldTemplate::TEMPLATE_SINGLE_ITEM   => 'LotuTheme3::ResultFields.SingleItemWrapper'
       ]);
      }, 0);
 
@@ -71,14 +71,14 @@ class LotuThemeServiceProvider extends ServiceProvider
      $dispatcher->listen('IO.Component.Import', function(ComponentContainer $container){
      if( $container->getOriginComponentTemplate() == 'Ceres::ItemList.Components.CategoryItem')
      {
-        $container->setNewComponentTemplate('LotuTheme::ItemList.Components.CategoryItem');
+        $container->setNewComponentTemplate('LotuTheme3::ItemList.Components.CategoryItem');
      }
       }, self::PRIORITY);
 
         /* ListItem JSON überschreiben */
     $dispatcher->listen( 'IO.ResultFields.*', function(ResultFieldTemplate $templateContainer) {
       $templateContainer->setTemplates([
-          ResultFieldTemplate::TEMPLATE_LIST_ITEM   => 'LotuTheme::ResultFields.ListItem'
+          ResultFieldTemplate::TEMPLATE_LIST_ITEM   => 'LotuTheme3::ResultFields.ListItem'
       ]);
     }, 0);
 
@@ -86,7 +86,7 @@ class LotuThemeServiceProvider extends ServiceProvider
     $dispatcher->listen('IO.Component.Import', function(ComponentContainer $container){
     if( $container->getOriginComponentTemplate() == 'Ceres::Ceres::Item.Components.ItemImageCarousel')
     {
-       $container->setNewComponentTemplate('LotuTheme::Item.ItemImageCarousel');
+       $container->setNewComponentTemplate('LotuTheme3::Item.ItemImageCarousel');
     }
      }, self::PRIORITY);
 
@@ -94,7 +94,7 @@ class LotuThemeServiceProvider extends ServiceProvider
    $dispatcher->listen('IO.Component.Import', function(ComponentContainer $container){
    if( $container->getOriginComponentTemplate() == 'Ceres::Checkout.Components.ShippingProfileSelect')
    {
-      $container->setNewComponentTemplate('LotuTheme::Checkout.Components.ShippingProfileSelect');
+      $container->setNewComponentTemplate('LotuTheme3::Checkout.Components.ShippingProfileSelect');
    }
     }, self::PRIORITY);
 
@@ -104,14 +104,14 @@ class LotuThemeServiceProvider extends ServiceProvider
     $dispatcher->listen('IO.Component.Import', function(ComponentContainer $container){
      if( $container->getOriginComponentTemplate() == 'Ceres::Basket.Components.BasketTotals')
      {
-        $container->setNewComponentTemplate('LotuTheme::Basket.Components.BasketTotals');
+        $container->setNewComponentTemplate('LotuTheme3::Basket.Components.BasketTotals');
      }
       }, self::PRIORITY);
 
       /* Überschreiben der CategoryItem  */
     $dispatcher->listen('IO.tpl.category.item', function(TemplateContainer $container){
 
-       $container->setTemplate('LotuTheme::Category.Item.CategoryItem');
+       $container->setTemplate('LotuTheme3::Category.Item.CategoryItem');
 
      }, self::PRIORITY);
 
