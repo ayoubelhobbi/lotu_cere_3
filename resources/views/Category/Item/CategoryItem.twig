@@ -90,7 +90,7 @@
                     <ul class="product-list row grid" v-is-loading-watcher="$store.state.itemList.isLoading">
                         {% for item in itemList %}
                             <li class="col-xs-12 col-sm-6 col-md-4 col-lg-{% if ceresConfig.header.showNavBars == "side" or ceresConfig.header.showNavBars == "both" %}4{% else %}3{% endif %}">
-                                {% include "LotuTheme::Category.Item.Partials.CategoryListItem" with { 'item': item, 'shippingCat': shippingCat } %}
+                                {% include "Theme::Category.Item.Partials.CategoryListItem" with { 'item': item, 'shippingCat': shippingCat } %}
                             </li>
                         {% endfor %}
                     </ul>

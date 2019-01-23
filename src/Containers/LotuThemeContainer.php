@@ -1,13 +1,13 @@
 <?php
 
-namespace LotuTheme3\Containers;
+namespace Theme\Containers;
 
 use Plenty\Plugin\Templates\Twig;
 
-class LotuThemeContainer
+class ThemeContainer
 {
     public function call(Twig $twig):string
     {
-        return $twig->render('LotuTheme3::Theme');
+        return $twig->render('Theme::Theme');
     }
 }
