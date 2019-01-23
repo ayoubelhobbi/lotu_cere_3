@@ -8,6 +8,6 @@ class LotuThemeContainer
 {
     public function call(Twig $twig):string
     {
-        return $twig->render('LotuTheme::Theme');
+        return $twig->render('LotuTheme3::Theme');
     }
 }
