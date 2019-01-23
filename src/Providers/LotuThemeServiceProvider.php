@@ -48,7 +48,7 @@ class LotuThemeServiceProvider extends ServiceProvider
       $dispatcher->listen('IO.init.templates', function(Partial $partial)
 			 {
 					$partial->set('footer', 'LotuTheme3::ThemeFooter');
-          $partial->set( 'page-design', 'LotuTheme3::PageDesign.PageDesign' );
+          
 			 }, 0);
 
           /* SingleItem überschreiben */
