@@ -10,11 +10,11 @@
     "price"             :   0.00,
     "categories"        :   [3518],
     "type"              :   "theme",
-    "serviceProvider"   :   "Theme\\Providers\\LotuThemeServiceProvider",
+    "serviceProvider"   :   "Theme\\Providers\\ThemeServiceProvider",
     "dataProviders"     :
     [
         {
-            "key"           :"Theme\\Containers\\LotuThemeContainer",
+            "key"           :"Theme\\Containers\\ThemeContainer",
             "name"          :"Generated plugin container",
             "description"   :"Add changes to the CSS file"
         }
