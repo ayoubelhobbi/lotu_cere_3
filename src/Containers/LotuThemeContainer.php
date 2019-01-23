@@ -1,6 +1,6 @@
 <?php
 
-namespace LotuTheme\Containers;
+namespace LotuTheme3\Containers;
 
 use Plenty\Plugin\Templates\Twig;
 

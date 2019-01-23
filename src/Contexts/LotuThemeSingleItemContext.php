@@ -1,5 +1,5 @@
 <?php
-namespace LotuTheme\Contexts;
+namespace LotuTheme3\Contexts;
 
 use IO\Helper\ContextInterface;
 use Ceres\Contexts\SingleItemContext;

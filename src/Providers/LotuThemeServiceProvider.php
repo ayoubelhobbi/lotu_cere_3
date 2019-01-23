@@ -4,7 +4,7 @@
 * @author: Ayoub El Hobbi
 */
 
-namespace LotuTheme\Providers;
+namespace LotuTheme3\Providers;
 
 
 use IO\Extensions\Functions\Partial;
@@ -15,7 +15,7 @@ use IO\Helper\ComponentContainer;
 use IO\Helper\TemplateContainer;
 use IO\Helper\ResourceContainer;
 use IO\Services\ItemSearch\Helper\ResultFieldTemplate;
-use LotuTheme\Contexts\LotuThemeSingleItemContext;
+use LotuTheme3\Contexts\LotuThemeSingleItemContext;
 
 /**
  * Class LotuThemeServiceProvider
