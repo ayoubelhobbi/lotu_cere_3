@@ -4,7 +4,7 @@
 * @author: Ayoub El Hobbi
 */
 
-namespace Theme\Providers;
+namespace Stoune\Providers;
 
 
 use IO\Extensions\Functions\Partial;
@@ -17,10 +17,10 @@ use IO\Helper\ResourceContainer;
 use IO\Services\ItemSearch\Helper\ResultFieldTemplate;
 
 /**
- * Class LotuThemeServiceProvider
- * @package LotuTheme\Providers
+ * Class StouneServiceProvider
+ * @package Stoune\Providers
  */
-class ThemeServiceProvider extends ServiceProvider
+class StouneServiceProvider extends ServiceProvider
 {
     const PRIORITY = 0;
 
@@ -35,14 +35,14 @@ class ThemeServiceProvider extends ServiceProvider
           /* Skripte einbinden  */
       $dispatcher->listen('IO.Resources.Import', function (ResourceContainer $container)
        {
-           $container->addScriptTemplate('Theme::ThemeScript');
+           $container->addScriptTemplate('Stoune::ThemeScript');
        }, self::PRIORITY);
 
           /* Footer überschreiben  */
       $dispatcher->listen('IO.init.templates', function(Partial $partial)
 			 {
-					$partial->set('footer', 'Theme::ThemeFooter');
-          $partial->set( 'page-design', 'Theme::PageDesign.PageDesign' );
+					$partial->set('footer', 'Stoune::ThemeFooter');
+          $partial->set( 'page-design', 'Stoune::PageDesign.PageDesign' );
 			 }, 0);
 
           /* SingleItem überschreiben */
@@ -50,14 +50,14 @@ class ThemeServiceProvider extends ServiceProvider
 			 {
 					 if ($container->getOriginComponentTemplate()=='Ceres::Item.Components.SingleItem')
 					 {
-							 $container->setNewComponentTemplate('Theme::Item.SingleItem');
+							 $container->setNewComponentTemplate('Stoune::Item.SingleItem');
 					 }
 			 }, self::PRIORITY);
 
           /* ResultFields SingleItemWrapper überschreiben  */
        $dispatcher->listen( 'IO.ResultFields.*', function(ResultFieldTemplate $templateContainer) {
       $templateContainer->setTemplates([
-          ResultFieldTemplate::TEMPLATE_SINGLE_ITEM   => 'Theme::ResultFields.SingleItemWrapper'
+          ResultFieldTemplate::TEMPLATE_SINGLE_ITEM   => 'Stoune::ResultFields.SingleItemWrapper'
       ]);
      }, 0);
 
@@ -65,14 +65,14 @@ class ThemeServiceProvider extends ServiceProvider
      $dispatcher->listen('IO.Component.Import', function(ComponentContainer $container){
      if( $container->getOriginComponentTemplate() == 'Ceres::ItemList.Components.CategoryItem')
      {
-        $container->setNewComponentTemplate('Theme::ItemList.Components.CategoryItem');
+        $container->setNewComponentTemplate('Stoune::ItemList.Components.CategoryItem');
      }
       }, self::PRIORITY);
 
         /* ListItem JSON überschreiben */
     $dispatcher->listen( 'IO.ResultFields.*', function(ResultFieldTemplate $templateContainer) {
       $templateContainer->setTemplates([
-          ResultFieldTemplate::TEMPLATE_LIST_ITEM   => 'Theme::ResultFields.ListItem'
+          ResultFieldTemplate::TEMPLATE_LIST_ITEM   => 'Stoune::ResultFields.ListItem'
       ]);
     }, 0);
 
@@ -80,7 +80,7 @@ class ThemeServiceProvider extends ServiceProvider
     $dispatcher->listen('IO.Component.Import', function(ComponentContainer $container){
     if( $container->getOriginComponentTemplate() == 'Ceres::Ceres::Item.Components.ItemImageCarousel')
     {
-       $container->setNewComponentTemplate('Theme::Item.ItemImageCarousel');
+       $container->setNewComponentTemplate('Stoune::Item.ItemImageCarousel');
     }
      }, self::PRIORITY);
 
@@ -88,7 +88,7 @@ class ThemeServiceProvider extends ServiceProvider
    $dispatcher->listen('IO.Component.Import', function(ComponentContainer $container){
    if( $container->getOriginComponentTemplate() == 'Ceres::Checkout.Components.ShippingProfileSelect')
    {
-      $container->setNewComponentTemplate('Theme::Checkout.Components.ShippingProfileSelect');
+      $container->setNewComponentTemplate('Stoune::Checkout.Components.ShippingProfileSelect');
    }
     }, self::PRIORITY);
 
@@ -98,14 +98,14 @@ class ThemeServiceProvider extends ServiceProvider
     $dispatcher->listen('IO.Component.Import', function(ComponentContainer $container){
      if( $container->getOriginComponentTemplate() == 'Ceres::Basket.Components.BasketTotals')
      {
-        $container->setNewComponentTemplate('Theme::Basket.Components.BasketTotals');
+        $container->setNewComponentTemplate('Stoune::Basket.Components.BasketTotals');
      }
       }, self::PRIORITY);
 
       /* Überschreiben der CategoryItem  */
     $dispatcher->listen('IO.tpl.category.item', function(TemplateContainer $container){
 
-       $container->setTemplate('Theme::Category.Item.CategoryItem');
+       $container->setTemplate('Stoune::Category.Item.CategoryItem');
 
      }, self::PRIORITY);
 

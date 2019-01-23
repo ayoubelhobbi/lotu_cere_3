@@ -1,13 +1,13 @@
 <?php
 
-namespace Theme\Containers;
+namespace Stoune\Containers;
 
 use Plenty\Plugin\Templates\Twig;
 
-class ThemeContainer
+class StouneContainer
 {
     public function call(Twig $twig):string
     {
-        return $twig->render('Theme::Theme');
+        return $twig->render('Stoune::Theme');
     }
 }
