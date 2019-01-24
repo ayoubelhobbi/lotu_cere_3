@@ -78,11 +78,21 @@ class StouneServiceProvider extends ServiceProvider
 
         /* Überschreiben der ItemImageCarousel */
     $dispatcher->listen('IO.Component.Import', function(ComponentContainer $container){
-    if( $container->getOriginComponentTemplate() == 'Ceres::Ceres::Item.Components.ItemImageCarousel')
+    if( $container->getOriginComponentTemplate() == 'Ceres::Item.Components.ItemImageCarousel')
     {
        $container->setNewComponentTemplate('Stoune::Item.ItemImageCarousel');
     }
      }, self::PRIORITY);
+
+     /* Überschreiben der ContactForm.twig */
+     $dispatcher->listen('IO.Component.Import', function(ComponentContainer $container){
+     if( $container->getOriginComponentTemplate() == 'Ceres::Customer.Components.Contact.ContactForm')
+     {
+        $container->setNewComponentTemplate('Stoune::Customer.Components.Contact.ContactForm');
+     }
+      }, self::PRIORITY);
+
+
 
      /* Überschreiben der ShippingProfileSelect */
    $dispatcher->listen('IO.Component.Import', function(ComponentContainer $container){
