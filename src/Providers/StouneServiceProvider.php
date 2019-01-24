@@ -50,7 +50,7 @@ class StouneServiceProvider extends ServiceProvider
 			 {
 					 if ($container->getOriginComponentTemplate()=='Ceres::Item.Components.SingleItem')
 					 {
-							 $container->setNewComponentTemplate('Stoune::Item.SingleItem');
+							 $container->setNewComponentTemplate('Stoune::Item.Components.SingleItem');
 					 }
 			 }, self::PRIORITY);
 
