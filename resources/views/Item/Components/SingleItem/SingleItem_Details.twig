@@ -19,6 +19,12 @@
                             <span class="articlenumber small text-muted">
                                 <b>{{ trans("Ceres::Template.singleItemNumber") }}</b>
                                 <span>${ currentVariation.variation.number }</span>
+                                {% if contactClass == 2 %}
+
+                                  <span v-if="currentVariation.stock.net !== 0" class="verfuegbare_menge"> Noch <b>${ currentVariation.stock.net } verfügbar</b></span>
+
+                                {% endif %}
+
                             </span>
     </div>
 
