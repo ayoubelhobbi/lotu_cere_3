@@ -61,14 +61,7 @@ class StouneServiceProvider extends ServiceProvider
       ]);
      }, 0);
 
-          /* KategorieAnsicht bei Auswahl der Navigation überschreiben  */
-     $dispatcher->listen('IO.Component.Import', function(ComponentContainer $container){
-     if( $container->getOriginComponentTemplate() == 'Ceres::ItemList.Components.CategoryItem')
-     {
-        $container->setNewComponentTemplate('Stoune::ItemList.Components.CategoryItem');
-     }
-      }, self::PRIORITY);
-
+  
         /* ListItem JSON überschreiben */
     $dispatcher->listen( 'IO.ResultFields.*', function(ResultFieldTemplate $templateContainer) {
       $templateContainer->setTemplates([
@@ -109,6 +102,14 @@ class StouneServiceProvider extends ServiceProvider
      if( $container->getOriginComponentTemplate() == 'Ceres::Basket.Components.BasketTotals')
      {
         $container->setNewComponentTemplate('Stoune::Basket.Components.BasketTotals');
+     }
+      }, self::PRIORITY);
+
+      /* KategorieAnsicht bei Auswahl der Navigation überschreiben  */
+     $dispatcher->listen('IO.Component.Import', function(ComponentContainer $container){
+     if( $container->getOriginComponentTemplate() == 'Ceres::ItemList.Components.CategoryItem')
+     {
+        $container->setNewComponentTemplate('Stoune::ItemList.Components.CategoryItem');
      }
       }, self::PRIORITY);
 
