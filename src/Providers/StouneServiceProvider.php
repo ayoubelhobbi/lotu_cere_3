@@ -61,7 +61,6 @@ class StouneServiceProvider extends ServiceProvider
       ]);
      }, 0);
 
-  
         /* ListItem JSON überschreiben */
     $dispatcher->listen( 'IO.ResultFields.*', function(ResultFieldTemplate $templateContainer) {
       $templateContainer->setTemplates([
@@ -98,12 +97,7 @@ class StouneServiceProvider extends ServiceProvider
 
     /* Überschreiben der Summen im Checkout - Checkout Totals einmal anpassen und überall anfragen! */
 
-    $dispatcher->listen('IO.Component.Import', function(ComponentContainer $container){
-     if( $container->getOriginComponentTemplate() == 'Ceres::Basket.Components.BasketTotals')
-     {
-        $container->setNewComponentTemplate('Stoune::Basket.Components.BasketTotals');
-     }
-      }, self::PRIORITY);
+    
 
       /* KategorieAnsicht bei Auswahl der Navigation überschreiben  */
      $dispatcher->listen('IO.Component.Import', function(ComponentContainer $container){
