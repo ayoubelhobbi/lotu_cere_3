@@ -41,6 +41,7 @@ class StouneServiceProvider extends ServiceProvider
           /* Footer überschreiben  */
       $dispatcher->listen('IO.init.templates', function(Partial $partial)
 			 {
+          $partial->set('header', 'Stoune::PageDesign.Partials.Header.Header')
 					$partial->set('footer', 'Stoune::ThemeFooter');
           $partial->set( 'page-design', 'Stoune::PageDesign.PageDesign' );
 			 }, 0);
