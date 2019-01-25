@@ -1025,6 +1025,10 @@ button.btn.btn-block.btn-default {
   font-family: 'akaChen', sans-serif;
 }
 
+.artikelnummerArtikelansicht {
+  margin-bottom: 1rem !important;
+}
+
 .iconsSingleItem span {
   display: inline-block;
 }
