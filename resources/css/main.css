@@ -1505,8 +1505,8 @@ nav.navbar.megamenu #mainNavbarCollapsable ul.mainmenu>li>ul.collapse>li .level2
     margin-right: -15px;
      background-position: right top;
     background-image: url(https://image.flaticon.com/icons/svg/987/987941.svg);
-    background-repeat: no-repeat;*/
-    padding-top: 1rem;
+    background-repeat: no-repeat;
+    padding-top: 1rem;*/
     padding-left: 0rem;
   }
 }
