@@ -57,14 +57,14 @@ class StouneServiceProvider extends ServiceProvider
           /* ResultFields SingleItemWrapper überschreiben  */
        $dispatcher->listen( 'IO.ResultFields.*', function(ResultFieldTemplate $templateContainer) {
       $templateContainer->setTemplates([
-          ResultFieldTemplate::TEMPLATE_SINGLE_ITEM   => 'Stoune::ResultFields.SingleItemWrapper'
+          ResultFieldTemplate::TEMPLATE_SINGLE_ITEM => 'Stoune::ResultFields.SingleItemWrapper'
       ]);
      }, 0);
 
         /* ListItem JSON überschreiben */
     $dispatcher->listen( 'IO.ResultFields.*', function(ResultFieldTemplate $templateContainer) {
       $templateContainer->setTemplates([
-          ResultFieldTemplate::TEMPLATE_LIST_ITEM   => 'Stoune::ResultFields.ListItem'
+          ResultFieldTemplate::TEMPLATE_LIST_ITEM => 'Stoune::ResultFields.ListItem'
       ]);
     }, 0);
 

@@ -596,6 +596,13 @@ div.col-md-5.single-rightside.m-t-1 > span.vat.small.text-muted {
     color: #ffffff;
 }
 
+.wrapper-main header .controls-list {
+  background-color: #222222;
+  border-bottom: 1px solid #ffce00;
+  border-left: 1px solid #ffce00;
+  border-right: 1px solid #ffce00;
+}
+
 .cmp-contact .contact-card p a {
   color: #fff;
 }
