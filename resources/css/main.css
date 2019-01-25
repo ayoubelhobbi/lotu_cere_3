@@ -604,6 +604,10 @@ div.col-md-5.single-rightside.m-t-1 > span.vat.small.text-muted {
   color: #ffffff;
 }
 
+.page-content {
+  padding-top: 0rem;
+}
+
 .page-content.contact:not(.checkout):not(.basket) {
   background-color: #222222;
 }
