@@ -1465,6 +1465,25 @@ nav.navbar.megamenu #mainNavbarCollapsable ul.mainmenu>li>ul.collapse>li .level2
   padding-bottom: 0em !important;
     padding-top: 0em !important;
 }
+
+nav.navbar.megamenu #mainNavbarCollapsable ul.mainmenu>li>ul.collapse>li ul.nav-dropdown-inner {
+    background-color: #222222;
+    padding-bottom: 1em;
+}
+
+nav.navbar.megamenu #mainNavbarCollapsable ul.mainmenu>li>ul.collapse>li ul.nav-dropdown-inner .level1>a {
+  color: #ffce00;
+}
+
+nav.navbar.megamenu #mainNavbarCollapsable ul.mainmenu>li>ul.collapse>li ul.nav-dropdown-inner>li>a {
+  color: #ffffff;
+
+}
+
+nav.navbar.megamenu #mainNavbarCollapsable ul.mainmenu>li>ul.collapse>li ul.nav-dropdown-inner>li.bt-more>a {
+  color: #6c757d;
+}
+
 }
 
 @media (min-width: 544px){
