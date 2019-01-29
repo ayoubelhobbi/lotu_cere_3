@@ -119,6 +119,30 @@ class StouneServiceProvider extends ServiceProvider
 
      }, self::PRIORITY);
 
+     /* Überschreiben der Filter-Navigation */
+     $dispatcher->listen('IO.Component.Import', function(ComponentContainer $container){
+      if( $container->getOriginComponentTemplate() == 'Ceres::ItemList.Components.Filter.ItemFilter')
+      {
+         $container->setNewComponentTemplate('Stoune::ItemList.Components.Filter.ItemFilter');
+      }
+       }, self::PRIORITY);
+
+     $dispatcher->listen('IO.Component.Import', function(ComponentContainer $container){
+      if( $container->getOriginComponentTemplate() == 'Ceres::ItemList.Components.Filter.ItemFilterList')
+      {
+         $container->setNewComponentTemplate('Stoune::ItemList.Components.Filter.ItemFilterList');
+      }
+       }, self::PRIORITY);
+
+     $dispatcher->listen('IO.Component.Import', function(ComponentContainer $container){
+      if( $container->getOriginComponentTemplate() == 'Ceres::ItemList.Components.Filter.ItemFilterTagList')
+      {
+         $container->setNewComponentTemplate('Stoune::ItemList.Components.Filter.ItemFilterTagList');
+      }
+       }, self::PRIORITY);
+
+
+
 
     }
 }
