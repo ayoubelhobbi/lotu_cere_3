@@ -254,6 +254,14 @@ body > #vue-app, body > #vue-error {
   color: #222222;
 }
 
+.basket-preview-hover {
+  background: #222222;
+}
+
+.top-bar .controls-list>li .basket-preview-hover .basket-item a {
+  color: #ffffff;
+}
+
 .cmp-method-list .method-list-item > input:disabled ~ label {
   opacity: 1;
 }
