@@ -1128,6 +1128,18 @@ button.btn.btn-block.btn-default {
   border-bottom: none;
 }
 
+.basket-preview-hover {
+  background: #222222;
+  color: #ffffff;
+  margin-top: 0.1rem;
+  border: 1px solid #ffce00;
+  margin-left: 0.1rem;
+}
+
+.top-bar .controls-list>li .basket-preview-hover .basket-item a {
+  color: #ffffff;
+}
+
 .iconsBeschreibung {
   max-width: 540px;
   background: #222222;
