@@ -47,6 +47,36 @@ body {
   background-image: url(https://cdn02.plentymarkets.com/o6fqzre3r8ga/frontend/hintergrund_lotu.jpg);
 }
 
+/* Table Design */
+
+table.material_table {
+  width: 100%;
+  border-collapse: collapse;
+  border-color: transparent;
+  border-style: solid;
+  color: #ffffff;
+}
+
+table.material_table td, table.material_table th {
+  border-width: 1px;
+  border-style: solid;
+  padding: 2px;
+  text-align: center;
+  border-color: #000;
+}
+
+table.material_table thead {
+  background-color: #ffcc00;
+  color: #000000;
+}
+
+.material_table th {
+  font-family: 'akaChen', sans-serif;
+}
+
+/* Table Design */
+
+
 .tag {
   padding: 0 0;
 }
