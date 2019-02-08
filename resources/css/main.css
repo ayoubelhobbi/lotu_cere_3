@@ -1395,7 +1395,10 @@ button.btn.btn-block.btn-default {
 .single .nav-tabs .nav-item .nav-link {
     font-size: 1em;
     font-family: 'akaChen', sans-serif !important;
-    color: #fff;
+    color: #222222;
+    background-color: #ffffff;
+    border: none;
+    border-top-right-radius: 2rem;
 }
 
 
@@ -1587,7 +1590,7 @@ nav.navbar.megamenu #mainNavbarCollapsable ul.mainmenu>li>ul.collapse>li ul.nav-
 @media (min-width: 768px) {
 .single .nav-tabs .nav-item .nav-link {
     border: none;
-    background-color: #515151;
+    background-color: #ffffff;
     border-top-right-radius: 2rem;
 }
 }
