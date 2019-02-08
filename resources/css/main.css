@@ -275,6 +275,10 @@ body > #vue-app, body > #vue-error {
   margin-top: 2rem;
 }
 
+.cmp-order-item {
+  border-bottom: 1px solid #6c757d;
+}
+
 .owl-theme .owl-nav [class*='owl-'] {
   background: transparent;
 }
@@ -760,6 +764,10 @@ div.col-md-5.single-rightside.m-t-1 > span.vat.small.text-muted {
 
 .single-rightside hr:nth-child(3) {
   display: none;
+}
+
+hr {
+  border-top: 1px solid #6c757d;
 }
 
 
