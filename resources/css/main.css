@@ -177,10 +177,6 @@ table.material_table thead {
   padding-top: 16px;
 }
 
-.kontaktSeite h1 {
-  margin-top: 2rem;
-}
-
 body > #vue-app, body > #vue-error {
   background-color: transparent;
 }
@@ -669,6 +665,11 @@ div.col-md-5.single-rightside.m-t-1 > span.vat.small.text-muted {
 
 .cmp-contact h1{
   color: #ffffff;
+  margin-top: 2rem;
+}
+
+.kontaktBeschreibung {
+  margin-bottom: 0;
 }
 
 .page-content {
