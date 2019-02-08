@@ -269,7 +269,10 @@ body > #vue-app, body > #vue-error {
   background: #000000;
   border-radius: 0;
   border: none;
+}
 
+.vielenDankProcessing {
+  margin-top: 2rem;
 }
 
 .owl-theme .owl-nav [class*='owl-'] {
@@ -424,6 +427,10 @@ body > #vue-app, body > #vue-error {
   background-color: #ffce00 !important;
   border-color: #000 !important;
   opacity: 0.8 !important;
+}
+
+a.bg-primary:focus, a.bg-primary:hover {
+  background-color: transparent;
 }
 
 .btn-primary:active, .btn-primary.active, .open > .btn-primary.dropdown-toggle {
