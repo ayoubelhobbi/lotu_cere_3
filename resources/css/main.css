@@ -172,9 +172,13 @@ table.material_table thead {
 
 .footer small {
   display: block;
-  border-top: 1px solid #fff;
+  border-top: 1px solid #6c757d;
   clear: left;
   padding-top: 16px;
+}
+
+.kontaktSeite h1 {
+  margin-top: 2rem;
 }
 
 body > #vue-app, body > #vue-error {
@@ -1584,14 +1588,6 @@ nav.navbar.megamenu #mainNavbarCollapsable ul.mainmenu>li>ul.collapse>li ul.nav-
 @media (min-width: 768px) {
 .wrapper-main>nav.container-max {
     top: 3px;
-}
-}
-
-@media (min-width: 768px) {
-.single .nav-tabs .nav-item .nav-link {
-    border: none;
-    background-color: #ffffff;
-    border-top-right-radius: 2rem;
 }
 }
 

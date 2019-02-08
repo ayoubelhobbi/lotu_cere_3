@@ -84,8 +84,6 @@ class StouneServiceProvider extends ServiceProvider
      }
       }, self::PRIORITY);
 
-
-
      /* Überschreiben der ShippingProfileSelect */
    $dispatcher->listen('IO.Component.Import', function(ComponentContainer $container){
    if( $container->getOriginComponentTemplate() == 'Ceres::Checkout.Components.ShippingProfileSelect')
@@ -94,9 +92,7 @@ class StouneServiceProvider extends ServiceProvider
    }
     }, self::PRIORITY);
 
-
     /* Überschreiben der Summen im Checkout - Checkout Totals einmal anpassen und überall anfragen! */
-
     $dispatcher->listen('IO.Component.Import', function(ComponentContainer $container){
      if( $container->getOriginComponentTemplate() == 'Ceres::Basket.Components.BasketTotals')
      {
@@ -125,7 +121,6 @@ class StouneServiceProvider extends ServiceProvider
         $container->setTemplate('LotuTheme::Checkout.OrderConfirmation');
 
      }, self::PRIORITY);
-
 
 
 
