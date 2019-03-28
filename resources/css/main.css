@@ -208,7 +208,11 @@ body > #vue-app, body > #vue-error {
 }
 
 .text-muted {
-  color: #fff;
+  color: #b2b1a7 !important;
+}
+
+.breadcrumb-item.active {
+  color: #b2b1a7;
 }
 
 .container-max {

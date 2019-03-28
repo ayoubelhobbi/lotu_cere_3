@@ -38,6 +38,8 @@
 
     "bundleComponents.*",
 
+    "barcodes.*"
+
     "salesPrices.*",
 
     "unit.content",
