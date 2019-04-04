@@ -1362,6 +1362,10 @@ button.btn.btn-block.btn-default {
     cursor: pointer;
 }
 
+.halterung_hinweis img {
+  max-width: 100%;
+}
+
 .modal-headerH {
     padding: 2px 16px;
     background-color: #5cb85c;
