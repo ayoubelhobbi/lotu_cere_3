@@ -1366,7 +1366,7 @@ button.btn.btn-block.btn-default {
   max-width: 100%;
 }
 
-.schrauben_halterung. .kleben_halterung, .klemmen_halterung {
+.schrauben_halterung, .kleben_halterung, .klemmen_halterung {
   padding: 2rem;
   background-color: #222222;
 }
