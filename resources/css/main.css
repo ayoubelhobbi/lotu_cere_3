@@ -1371,6 +1371,11 @@ button.btn.btn-block.btn-default {
   padding: 3rem;
 }
 
+.halterung_inner h2 {
+    text-align: center;
+    margin-top: 2rem;
+}
+
 .modal-headerH {
     padding: 2px 16px;
     background-color: #5cb85c;
