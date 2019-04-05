@@ -1364,11 +1364,14 @@ button.btn.btn-block.btn-default {
 
 .halterung_hinweis img {
   max-width: 100%;
+  width: 8rem;
+  margin: 1rem auto;
+  display: block;
 }
 
 .halterung_inner {
   background: #222222;
-  padding: 3rem;
+  padding: 2rem;
 }
 
 .halterung_inner h2 {
