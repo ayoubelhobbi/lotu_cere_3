@@ -1369,6 +1369,11 @@ button.btn.btn-block.btn-default {
   display: block;
 }
 
+.schrauben_halterung, .kleben_halterung, .klemmen_halterung {
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #6c757d;
+}
+
 .HalterungZweck {
   margin-top: -0.5rem;
 }
