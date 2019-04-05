@@ -1372,6 +1372,7 @@ button.btn.btn-block.btn-default {
 .halterung_inner {
   background: #222222;
   padding: 2rem;
+  margin-bottom: 2rem;
 }
 
 .halterung_inner p {
