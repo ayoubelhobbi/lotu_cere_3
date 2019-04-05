@@ -1370,8 +1370,13 @@ button.btn.btn-block.btn-default {
 }
 
 span.fuerHalterung {
-    font-size: 2rem;
-    font-family: 'akaChen', sans-serif;
+  font-size: 2rem;
+  font-family: 'akaChen', sans-serif;
+}
+
+span.passendHalterung {
+  font-size: 1rem;
+  font-family: 'akaChen', sans-serif;
 }
 
 .halterung_inner {
