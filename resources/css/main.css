@@ -1374,6 +1374,10 @@ button.btn.btn-block.btn-default {
   padding: 2rem;
 }
 
+.halterung_inner p {
+  text-align: center;
+}
+
 .halterung_inner h2 {
     text-align: center;
     margin-top: 2rem;
