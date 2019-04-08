@@ -1398,7 +1398,7 @@ button.btn.btn-block.btn-default {
   margin-top: -0.5rem;
 }
 
-span.fuerHalterung {
+span.fuerHalterung, .fuerHalterungPassend {
   font-size: 1.4rem;
   font-family: 'akaChen', sans-serif;
 }
