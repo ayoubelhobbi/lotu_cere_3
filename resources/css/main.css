@@ -1382,7 +1382,9 @@ button.btn.btn-block.btn-default {
 }
 
 .passend_inner > .row {
-    border-bottom: 1px solid #6c757d;
+  border-bottom: 1px solid #6c757d;
+  padding-bottom: 1.5rem;
+  padding-top: 1.5rem;
 }
 
 .no_line {
