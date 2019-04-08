@@ -1369,6 +1369,11 @@ button.btn.btn-block.btn-default {
   display: block;
 }
 
+.passend_inner {
+  margin: 2rem;
+  padding: 2rem;
+}
+
 .passenderArtikel img {
   display: block;
   width: 14rem;
