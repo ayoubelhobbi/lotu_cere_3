@@ -1372,6 +1372,7 @@ button.btn.btn-block.btn-default {
 .passenderArtikel img {
   display: block;
   width: 14rem;
+  margin: 0 auto;
 }
 
 .schrauben_halterung, .kleben_halterung, .klemmen_halterung {
