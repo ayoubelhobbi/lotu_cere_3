@@ -1362,7 +1362,7 @@ button.btn.btn-block.btn-default {
     cursor: pointer;
 }
 
-.halterung_hinweis img {
+.halterung_inner img {
   max-width: 100%;
   width: 8rem;
   margin: 1rem auto;
