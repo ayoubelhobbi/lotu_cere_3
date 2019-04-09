@@ -1376,9 +1376,7 @@ button.btn.btn-block.btn-default {
 }
 
 .passenderArtikel img {
-  display: block;
   width: 14rem;
-  margin: 0 auto;
 }
 
 .passend_inner > .row {
