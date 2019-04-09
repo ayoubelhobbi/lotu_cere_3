@@ -1854,6 +1854,18 @@ nav.navbar.megamenu #mainNavbarCollapsable ul.mainmenu > li > ul.collapse {
 .videoGallerySingle img {
   width: 4.2rem;
 }
+
+.passenderArtikel img {
+    margin: 0 auto;
+    display: block;
+}
+
+.artikelHalterung {
+  margin: 0 auto;
+  display: block;
+  width: 50%;
+  margin-left: 0;
+  }
 }
 
 /* Filter */
