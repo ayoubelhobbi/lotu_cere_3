@@ -1347,6 +1347,11 @@ button.btn.btn-block.btn-default {
   padding: 0.5rem 0.5rem;
 }
 
+.btn>.fa {
+  float: right;
+  margin-left: 0.4rem;
+}
+
 .bg-info {
   color: #222222 !important;
   background-color: #ffce00 !important;
