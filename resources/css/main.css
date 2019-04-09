@@ -1362,6 +1362,12 @@ button.btn.btn-block.btn-default {
     cursor: pointer;
 }
 
+.artikelHalterung {
+    margin: 0 auto;
+    display: block;
+    width: 14rem;
+}
+
 .halterung_inner img {
   max-width: 100%;
   width: 8rem;
