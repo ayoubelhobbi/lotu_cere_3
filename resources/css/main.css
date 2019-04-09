@@ -1408,11 +1408,12 @@ button.btn.btn-block.btn-default {
 }
 
 .fuerHalterung {
-  height: 3.4rem;
   background-color: #ffce00;
   margin-bottom: 2rem;
   color: #222;
   border-radius: 0.5rem;
+  margin: 0 auto;
+  display: block;
 }
 
 .schrauben_halterung, .kleben_halterung, .klemmen_halterung {
