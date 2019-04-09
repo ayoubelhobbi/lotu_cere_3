@@ -1446,8 +1446,14 @@ span.passendHalterung {
 }
 
 .halterung_inner h2 {
-    text-align: center;
-    margin-top: 2rem;
+  text-align: center;
+  margin-top: 2rem;
+  writing-mode: vertical-rl;
+  text-orientation: sideways;
+  margin: 0 auto;
+  display: block;
+  font-size: 9.6rem;
+  transform: rotate(-180deg);
 }
 
 .modal-headerH {
