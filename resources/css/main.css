@@ -1342,6 +1342,11 @@ button.btn.btn-block.btn-default {
     font-weight: bold;
 }
 
+
+.btn {
+  padding: 0.5rem 0.5rem;
+}
+
 .bg-info {
   color: #222222 !important;
   background-color: #ffce00 !important;
@@ -1363,9 +1368,9 @@ button.btn.btn-block.btn-default {
 }
 
 .artikelHalterung {
-    margin: 0 auto;
-    display: block;
-    width: 14rem;
+  margin-left: 3rem;
+  margin-top: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 .halterung_inner img {
