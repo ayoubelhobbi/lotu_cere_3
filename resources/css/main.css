@@ -1373,7 +1373,6 @@ button.btn.btn-block.btn-default {
 }
 
 .artikelHalterung {
-  margin-left: 3rem;
   margin-top: .5rem;
   margin-bottom: 0.5rem;
 }
@@ -1396,7 +1395,7 @@ button.btn.btn-block.btn-default {
 }
 
 .passenderArtikel img {
-  width: 14rem;
+  width: 7rem;
 }
 
 .passend_inner > .row {
