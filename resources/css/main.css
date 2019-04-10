@@ -1391,7 +1391,9 @@ button.btn.btn-block.btn-default {
 }
 
 .passenderArtikel {
-    margin-bottom: 1rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  margin-top: 3rem;
 }
 
 .passenderArtikel img {
@@ -1408,10 +1410,7 @@ button.btn.btn-block.btn-default {
 }
 
 .fuerHalterung {
-  background-color: #ffce00;
   margin-bottom: 2rem;
-  color: #222;
-  border-radius: 0.5rem;
   margin: 0 auto;
   display: block;
 }
