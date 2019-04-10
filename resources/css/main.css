@@ -1439,7 +1439,7 @@ button.btn.btn-block.btn-default {
   padding: 0.5rem 2rem 0.5rem 2rem;
 }
 
-.schrauben_halterung, .kleben_halterung, .klemmen_halterung {
+.schrauben_halterung, .kleben_halterung {
     margin-bottom: 2rem;
     border-bottom: 1px solid #6c757d;
 }
