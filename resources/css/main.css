@@ -1415,6 +1415,10 @@ button.btn.btn-block.btn-default {
   display: block;
 }
 
+.fuerhalterungSchriftGross {
+  font-size: 2rem !important;
+}
+
 .schrauben_halterung, .kleben_halterung, .klemmen_halterung {
     margin-bottom: 2rem;
     border-bottom: 1px solid #6c757d;
