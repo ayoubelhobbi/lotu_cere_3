@@ -1388,6 +1388,18 @@ button.btn.btn-block.btn-default {
   display: block;
 }
 
+.halterung_header_hoehe_schrauben {
+  height: 42rem;
+}
+
+.halterung_header_hoehe_kleben {
+  height: 100rem;
+}
+
+.halterung_header_hoehe_klemmen {
+  height: 153.5rem;
+}
+
 .passend_inner {
   margin-bottom: 2rem;
   padding: 0rem 1rem 0rem 1rem;
