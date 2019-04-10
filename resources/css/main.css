@@ -1894,6 +1894,7 @@ nav.navbar.megamenu #mainNavbarCollapsable ul.mainmenu > li > ul.collapse {
   text-orientation: initial;
   transform: none;
   font-size: 3rem;
+  height: auto;
 }
 
 }
