@@ -1420,7 +1420,7 @@ button.btn.btn-block.btn-default {
 }
 
 .fuerhalterungSchriftGross {
-  font-size: 2rem !important;
+  font-size: 1.7rem !important;
 }
 
 .schrauben_halterung, .kleben_halterung, .klemmen_halterung {
@@ -1459,7 +1459,7 @@ span.passendHalterung {
   text-orientation: sideways;
   margin: 0 auto;
   display: block;
-  font-size: 7.7rem;
+  font-size: 7.76rem;
   transform: rotate(-180deg);
 }
 
