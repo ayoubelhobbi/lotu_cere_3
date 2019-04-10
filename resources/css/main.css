@@ -1377,6 +1377,10 @@ button.btn.btn-block.btn-default {
   margin-bottom: 0.5rem;
 }
 
+.artikelHalterung button {
+  font-size: 0.9rem;
+}
+
 .halterung_inner img {
   max-width: 100%;
   width: 8rem;
