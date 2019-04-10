@@ -1391,7 +1391,11 @@ button.btn.btn-block.btn-default {
 .passend_inner {
   margin-bottom: 2rem;
   padding: 0rem 1rem 2rem 1rem;
-  background-color: #222222;
+}
+
+.passend_inner > .row {
+    background-color: #222222;
+    margin-bottom: 2rem;
 }
 
 .passenderArtikel {
