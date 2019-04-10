@@ -1390,7 +1390,7 @@ button.btn.btn-block.btn-default {
 
 .passend_inner {
   margin-bottom: 2rem;
-  padding: 0rem 2rem 2rem 2rem;
+  padding: 0rem 1rem 2rem 1rem;
   background-color: #222222;
 }
 
@@ -1404,11 +1404,6 @@ button.btn.btn-block.btn-default {
   width: 7rem;
 }
 
-.passend_inner > .row {
-  border-bottom: 1px solid #6c757d;
-  padding-top: 1.5rem;
-}
-
 .no_line {
   border-bottom: none !important;
 }
@@ -1417,10 +1412,15 @@ button.btn.btn-block.btn-default {
   margin-bottom: 2rem;
   margin: 0 auto;
   display: block;
+  width: 100%;
+  text-align: center;
 }
 
 .fuerhalterungSchriftGross {
-  font-size: 1.7rem !important;
+  font-size: 1.5rem !important;
+  background: #fff;
+  color: #222222;
+  padding: 0.5rem 2rem 0.5rem 2rem;
 }
 
 .schrauben_halterung, .kleben_halterung, .klemmen_halterung {
