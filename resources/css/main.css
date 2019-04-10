@@ -1420,6 +1420,10 @@ button.btn.btn-block.btn-default {
   width: 11rem;
 }
 
+.passenderArtikel img:hover {
+  opacity: 0.9;
+}
+
 .no_line {
   border-bottom: none !important;
 }
