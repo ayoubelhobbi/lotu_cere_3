@@ -125,6 +125,11 @@ table.material_table thead {
     border-top: none !important;
   }
 
+.amzPayButton img {
+  margin: 0 auto;
+  display: block;
+}
+
 /* CSS für den neuen Footer */
 
 .footer {
