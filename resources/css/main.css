@@ -176,10 +176,13 @@ table.material_table thead {
 }
 
 .footer small {
-  display: block;
   border-top: 1px solid #6c757d;
-  clear: left;
   padding-top: 16px;
+}
+
+.copyright {
+  margin: 0 auto;
+  display: block;
 }
 
 body > #vue-app, body > #vue-error {
