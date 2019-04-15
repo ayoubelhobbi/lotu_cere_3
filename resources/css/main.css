@@ -282,6 +282,10 @@ body > #vue-app, body > #vue-error {
   margin-top: 2rem;
 }
 
+hr {
+  border-top: 1px solid #6c757d;
+}
+
 .cmp-order-item {
   border-bottom: 1px solid #6c757d;
 }
@@ -660,13 +664,6 @@ div.col-md-5.single-rightside.m-t-1 > span.vat.small.text-muted {
     color: #ffffff;
 }
 
-.wrapper-main header .controls-list {
-  background-color: #222222;
-  border-bottom: 1px solid #ffce00;
-  border-left: 1px solid #ffce00;
-  border-right: 1px solid #ffce00;
-}
-
 .cmp-contact .contact-card p a {
   color: #fff;
 }
@@ -678,10 +675,6 @@ div.col-md-5.single-rightside.m-t-1 > span.vat.small.text-muted {
 
 .kontaktBeschreibung {
   margin-bottom: 0;
-}
-
-.page-content {
-  padding-top: 0rem;
 }
 
 .page-content.contact:not(.checkout):not(.basket) {
@@ -701,6 +694,10 @@ div.col-md-5.single-rightside.m-t-1 > span.vat.small.text-muted {
     text-align: center;
     color: #000;
     font-family: 'akaChen', sans-serif;
+}
+
+.page-content {
+  padding-top: 0rem !important;
 }
 
 .modal-body h1, .modal-body h2, .modal-body h3, .modal-body h4, .modal-body h5, .modal-body h6, .modal-body p {
@@ -777,10 +774,6 @@ div.col-md-5.single-rightside.m-t-1 > span.vat.small.text-muted {
 
 .single-rightside hr:nth-child(3) {
   display: none;
-}
-
-hr {
-  border-top: 1px solid #6c757d;
 }
 
 
@@ -949,6 +942,13 @@ span.vat-porto-info.small.text-muted, .btn-labeled, .basket-preview .totals, spa
 .verfuegbare_menge {
   color: #7ed321;
   float: right;
+}
+
+.wrapper-main header .controls-list {
+  background-color: #222222;
+  border-bottom: 1px solid #ffce00;
+  border-left: 1px solid #ffce00;
+  border-right: 1px solid #ffce00;
 }
 
 .cmp-search-box {
@@ -1657,6 +1657,9 @@ a.nav-link.active:hover, a.nav-link:hover {
   .cmp-product-thumb .thumb-inner{
     padding: 1rem;
   }
+  table.material_table td, table.material_table th {
+   font-size: 0.7rem;
+ }
 }
 
 .single #single-carousel {
