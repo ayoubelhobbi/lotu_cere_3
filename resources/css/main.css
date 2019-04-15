@@ -1532,7 +1532,7 @@ span.passendHalterung {
     font-family: 'akaChen', sans-serif !important;
     color: #222222;
     background-color: #ffffff;
-    border: none;
+    border: none !important;
     border-top-right-radius: 2rem;
 }
 
