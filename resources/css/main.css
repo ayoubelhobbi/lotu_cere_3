@@ -1663,7 +1663,7 @@ a.nav-link.active:hover, a.nav-link:hover {
   background: transparent;
 }
 
-.owl-stage-outer.owl-height {
+.owl-stage-outer .owl-height {
     height: auto !important;
 }
 
