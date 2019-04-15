@@ -1565,6 +1565,11 @@ span.passendHalterung {
   background: transparent;
   z-index: 1000;
 }
+
+@media (min-width: 768px) {
+.single-rightside {
+  position: unset;
+}
 }
 
 /* @media (min-width: 768px) {
