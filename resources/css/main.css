@@ -496,6 +496,7 @@ a.bg-primary:focus, a.bg-primary:hover {
 .page-link {
   background-color: transparent;
   border: none;
+  color: #ffffff;
 }
 
 .page-link:focus, .page-link:hover {
