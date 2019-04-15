@@ -62,12 +62,12 @@ table.material_table td, table.material_table th {
   border-style: solid;
   padding: 2px;
   text-align: center;
-  border-color: #ffce00;
+  border-color: #6c757d;
 }
 
 table.material_table thead {
-  background-color: #ffcc00;
-  color: #000000;
+  background-color: #ffffff;
+  color: #222222;
 }
 
 .table th, .table td {
