@@ -118,7 +118,7 @@ class StouneServiceProvider extends ServiceProvider
      /* Überschreiben der Bestätigungsseite */
      $dispatcher->listen('IO.tpl.confirmation', function (TemplateContainer $container)
      {
-        $container->setTemplate('LotuTheme::Checkout.OrderConfirmation');
+        $container->setTemplate('Stoune::Checkout.OrderConfirmation');
 
      }, self::PRIORITY);
 
