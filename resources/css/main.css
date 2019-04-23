@@ -675,6 +675,7 @@ div.col-md-5.single-rightside.m-t-1 > span.vat.small.text-muted {
 /* Responsive -- Mobile*/
 .navbar-toggler {
   color: #fff;
+  right: 2rem;
 }
 
 .mobile-navigation {
