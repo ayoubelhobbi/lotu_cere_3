@@ -795,6 +795,13 @@ div.col-md-5.single-rightside.m-t-1 > span.vat.small.text-muted {
   min-width: 80px;
 }
 
+@media (max-width: 543px) {
+.basket-item-container .basket-item .image-container {
+  width: 50px;
+  margin: 0 10px 0 0;
+}
+}
+
 .basket-item-container a {
   color: #fff;
 }
