@@ -1918,6 +1918,15 @@ nav.navbar.megamenu #mainNavbarCollapsable ul.mainmenu > li > ul.collapse {
 
 }
 
+@media (max-width: 575.98px){
+.single .nav-tabs {
+    display: none;
+}
+.single .nav-tabs .nav-item {
+  float: left;
+}
+}
+
 /* Filter */
 
 .filter-category { margin: 0 -20px; }
