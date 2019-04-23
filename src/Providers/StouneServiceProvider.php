@@ -122,6 +122,13 @@ class StouneServiceProvider extends ServiceProvider
 
      }, self::PRIORITY);
 
+     /* Überschreiben der SingleItemWrapper */
+     $eventDispatcher->listen('IO.tpl.item', function(TemplateContainer $container, $templateData)
+     {
+       $container->setTemplate('Stoune::Item.SingleItemWrapper');
+       return false;
+     }, 0);
+
      /* Überschreiben der Variationen */
      $dispatcher->listen('IO.Component.Import', function(ComponentContainer $container){
      if( $container->getOriginComponentTemplate() == 'Ceres::Item.Components.VariationSelect')
