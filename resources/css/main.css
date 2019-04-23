@@ -365,6 +365,7 @@ hr {
 .top-bar {
   background-color: transparent;
   position: relative;
+  margin-bottom: 0 !important;
 }
 
 .wrapper-main #page-header.top-bar {
@@ -1618,7 +1619,7 @@ a.nav-link.active:hover, a.nav-link:hover {
 }
 
 #single-carousel .owl-item img {
-  height: auto;
+  height: auto !important;
 }
 
 .cmp-product-thumb .main-image {
@@ -1838,7 +1839,7 @@ span.vat-porto-info.small.text-muted, .btn-labeled, .basket-preview .totals, spa
 }
 
 .owl-thumbs .owl-thumb {
-	height: auto;
+	height: auto !important;
 }
 
 }
