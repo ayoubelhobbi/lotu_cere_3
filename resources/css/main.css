@@ -19,6 +19,14 @@ website: http://ayouncif.com
   display: none;
 }
 
+a.text-primary:hover, a.text-primary:focus {
+  color: #ffce00 !important;
+}
+
+.text-primary {
+  color: #fff;
+}
+
 a {
   color: #ffce00;
 }
