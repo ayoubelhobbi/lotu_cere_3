@@ -1348,6 +1348,10 @@ button.btn.btn-block.btn-default {
     to {top:0; opacity:1}
 }
 
+.close {
+  color: #fff;
+}
+
 /* The Close Button */
 .closeH {
     color: white;
