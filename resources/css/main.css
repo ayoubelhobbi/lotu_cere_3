@@ -476,7 +476,7 @@ a.bg-primary:focus, a.bg-primary:hover {
 
 .btn-outline-primary:hover {
   color: #000;
-  background-color: transparent;
+  background-color: #ffce00;
   border-color: #FFCE02;
   opacity: 0.7;
 }
