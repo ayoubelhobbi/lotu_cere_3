@@ -122,8 +122,8 @@ class StouneServiceProvider extends ServiceProvider
 
      }, self::PRIORITY);
 
-     /* Überschreiben der SingleItemWrapper */
-     $eventDispatcher->listen('IO.tpl.item', function(TemplateContainer $container, $templateData)
+     /* Überschreiben der SingleItemWrapper - Somit lässt sich das SingleItemView überschreiben und auch die Komponente VariationSelect */
+     $dispatcher->listen('IO.tpl.item', function(TemplateContainer $container)
      {
        $container->setTemplate('Stoune::Item.SingleItemWrapper');
        return false;
@@ -136,8 +136,6 @@ class StouneServiceProvider extends ServiceProvider
         $container->setNewComponentTemplate('Stoune::Item.Components.VariationSelect');
      }
       }, self::PRIORITY);
-
-
 
     }
 }
