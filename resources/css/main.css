@@ -24,7 +24,7 @@ a.text-primary:hover, a.text-primary:focus {
 }
 
 .text-primary {
-  color: #fff;
+  color: #fff !important;
 }
 
 a {
@@ -793,6 +793,10 @@ div.col-md-5.single-rightside.m-t-1 > span.vat.small.text-muted {
 
 .basket-item-container .basket-item .basket-item-container-right .price-box {
   min-width: 80px;
+}
+
+.basket-item-container .basket-item .image-container {
+  width: 6rem;
 }
 
 @media (max-width: 543px) {
