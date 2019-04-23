@@ -122,6 +122,14 @@ class StouneServiceProvider extends ServiceProvider
 
      }, self::PRIORITY);
 
+     /* Überschreiben der Variationen */
+     $dispatcher->listen('IO.Component.Import', function(ComponentContainer $container){
+     if( $container->getOriginComponentTemplate() == 'Ceres::Item.Components.VariationSelect')
+     {
+        $container->setNewComponentTemplate('Stoune::Item.Components.VariationSelect');
+     }
+      }, self::PRIORITY);
+
 
 
     }

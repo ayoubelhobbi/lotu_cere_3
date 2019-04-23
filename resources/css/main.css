@@ -563,14 +563,11 @@ header.basket-header.p-a-1 {
 
 .input-unit label, .input-unit .input-unit-label {
   color: #fff;
-  /* color: #222222; */
-
 }
 
 .modal-body .input-unit {
   border: 1px solid #222222;
   border-radius: 0;
-
 }
 
 .modal-body .custom-select {
@@ -591,35 +588,28 @@ header.basket-header.p-a-1 {
   font-weight: bold;
   font-size: 3rem;
 }
-
-
 span.vat-porto-info.small.text-muted, .btn-labeled, .basket-preview .totals, span.vat.small.text-muted {
   font-size: 73%;
   border-top: 1px solid #ffce00;
   padding-top: 1px;
 }
-
 .cmp-product-thumb .prices {
   padding-bottom: 1rem;
 }
-
 .alert-info {
   background-color: #222;
   border-color: #ffce00;
   color: #fff;
 }
-
 .availability_1, .availability_2 {
   background-color: transparent;
   color: #7ed321
 }
-
 .qty-box .qty-btn-container .qty-btn {
   font-size: 0.8rem;
   vertical-align: middle;
   clear: both;
 }
-
 .qty-box .qty-btn-container .qty-btn:not(.disabled):hover {
   background: transparent;
 }
