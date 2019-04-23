@@ -1920,10 +1920,13 @@ nav.navbar.megamenu #mainNavbarCollapsable ul.mainmenu > li > ul.collapse {
 
 @media (max-width: 575.98px){
 .single .nav-tabs {
-    display: none;
+    display: flex;
 }
 .single .nav-tabs .nav-item {
   float: left;
+}
+.wrapper-main #page-body {
+    margin-top: 5rem;
 }
 }
 
