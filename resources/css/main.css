@@ -44,7 +44,7 @@ h1, h2, h3, h4, h5, h6 {
 
 body {
   color: #fff;
-  background-image: url(https://cdn02.plentymarkets.com/o6fqzre3r8ga/frontend/hintergrund.jpg);
+  background-image: url(https://cdn02.plentymarkets.com/o6fqzre3r8ga/frontend/hintergrund_lotu.jpg);
 }
 
 /* Table Design */
@@ -62,12 +62,12 @@ table.material_table td, table.material_table th {
   border-style: solid;
   padding: 2px;
   text-align: center;
-  border-color: #6c757d;
+  border-color: #ffce00;
 }
 
 table.material_table thead {
-  background-color: #ffffff;
-  color: #222222;
+  background-color: #ffcc00;
+  color: #000000;
 }
 
 .table th, .table td {
@@ -125,11 +125,6 @@ table.material_table thead {
     border-top: none !important;
   }
 
-.amzPayButton img {
-  margin: 0 auto;
-  display: block;
-}
-
 /* CSS für den neuen Footer */
 
 .footer {
@@ -175,9 +170,11 @@ table.material_table thead {
   color: #fff;
 }
 
-.copyright {
-  margin: 0 auto;
+.footer small {
   display: block;
+  border-top: 1px solid #6c757d;
+  clear: left;
+  padding-top: 16px;
 }
 
 body > #vue-app, body > #vue-error {
@@ -282,10 +279,6 @@ body > #vue-app, body > #vue-error {
   margin-top: 2rem;
 }
 
-hr {
-  border-top: 1px solid #6c757d;
-}
-
 .cmp-order-item {
   border-bottom: 1px solid #6c757d;
 }
@@ -365,7 +358,6 @@ hr {
 .top-bar {
   background-color: transparent;
   position: relative;
-  margin-bottom: 0 !important;
 }
 
 .wrapper-main #page-header.top-bar {
@@ -499,7 +491,6 @@ a.bg-primary:focus, a.bg-primary:hover {
 .page-link {
   background-color: transparent;
   border: none;
-  color: #ffffff;
 }
 
 .page-link:focus, .page-link:hover {
@@ -665,6 +656,13 @@ div.col-md-5.single-rightside.m-t-1 > span.vat.small.text-muted {
     color: #ffffff;
 }
 
+.wrapper-main header .controls-list {
+  background-color: #222222;
+  border-bottom: 1px solid #ffce00;
+  border-left: 1px solid #ffce00;
+  border-right: 1px solid #ffce00;
+}
+
 .cmp-contact .contact-card p a {
   color: #fff;
 }
@@ -676,6 +674,10 @@ div.col-md-5.single-rightside.m-t-1 > span.vat.small.text-muted {
 
 .kontaktBeschreibung {
   margin-bottom: 0;
+}
+
+.page-content {
+  padding-top: 0rem;
 }
 
 .page-content.contact:not(.checkout):not(.basket) {
@@ -695,10 +697,6 @@ div.col-md-5.single-rightside.m-t-1 > span.vat.small.text-muted {
     text-align: center;
     color: #000;
     font-family: 'akaChen', sans-serif;
-}
-
-.page-content {
-  padding-top: 0rem !important;
 }
 
 .modal-body h1, .modal-body h2, .modal-body h3, .modal-body h4, .modal-body h5, .modal-body h6, .modal-body p {
@@ -775,6 +773,10 @@ div.col-md-5.single-rightside.m-t-1 > span.vat.small.text-muted {
 
 .single-rightside hr:nth-child(3) {
   display: none;
+}
+
+hr {
+  border-top: 1px solid #6c757d;
 }
 
 
@@ -943,13 +945,6 @@ span.vat-porto-info.small.text-muted, .btn-labeled, .basket-preview .totals, spa
 .verfuegbare_menge {
   color: #7ed321;
   float: right;
-}
-
-.wrapper-main header .controls-list {
-  background-color: #222222;
-  border-bottom: 1px solid #ffce00;
-  border-left: 1px solid #ffce00;
-  border-right: 1px solid #ffce00;
 }
 
 .cmp-search-box {
@@ -1347,16 +1342,6 @@ button.btn.btn-block.btn-default {
     font-weight: bold;
 }
 
-
-.btn {
-  padding: 0.5rem 0.5rem;
-}
-
-.btn>.fa {
-  float: right;
-  margin-left: 0.4rem;
-}
-
 .bg-info {
   color: #222222 !important;
   background-color: #ffce00 !important;
@@ -1375,117 +1360,6 @@ button.btn.btn-block.btn-default {
     color: #000;
     text-decoration: none;
     cursor: pointer;
-}
-
-.artikelHalterung {
-  margin-top: .5rem;
-  margin-bottom: 0.5rem;
-}
-
-.artikelHalterung button {
-  font-size: 0.9rem;
-}
-
-.halterung_inner img {
-  max-width: 100%;
-  width: 8rem;
-  margin: 1rem auto;
-  display: block;
-}
-
-.halterung_header_hoehe_schrauben {
-  height: 47rem;
-}
-
-.halterung_header_hoehe_kleben {
-  height: 100rem;
-}
-
-.halterung_header_hoehe_klemmen {
-  height: 153.5rem;
-}
-
-.passend_inner {
-  margin-bottom: 2rem;
-  padding: 0rem 1rem 0rem 1rem;
-}
-
-.passend_inner > .row {
-    background-color: #222222;
-    margin-bottom: 2rem;
-}
-
-.passenderArtikel {
-  margin-bottom: 2rem;
-  text-align: center;
-  margin-top: 1rem;
-}
-
-.passenderArtikel img {
-  width: 11rem;
-}
-
-.passenderArtikel img:hover {
-  opacity: 0.9;
-}
-
-.no_line {
-  border-bottom: none !important;
-}
-
-.fuerHalterung {
-  margin-bottom: 2rem;
-  margin: 0 auto;
-  display: block;
-  width: 100%;
-  text-align: center;
-}
-
-.fuerhalterungSchriftGross {
-  font-size: 1.5rem !important;
-  background: #fff;
-  color: #222222;
-  padding: 0.5rem 2rem 0.5rem 2rem;
-}
-
-.schrauben_halterung, .kleben_halterung {
-    margin-bottom: 2rem;
-    border-bottom: 1px solid #6c757d;
-}
-
-.HalterungZweck {
-  margin-top: -0.5rem;
-}
-
-span.fuerHalterung, .fuerHalterungPassend {
-  font-size: 1.4rem;
-  font-family: 'akaChen', sans-serif;
-}
-
-span.passendHalterung {
-  font-size: 1.2rem;
-  font-family: 'akaChen', sans-serif;
-}
-
-.halterung_inner {
-  background: #222222;
-  padding: 2rem;
-  margin-bottom: 2rem;
-}
-
-.halterung_inner p {
-  text-align: center;
-}
-
-.halterung_inner h2 {
-  text-align: center;
-  margin-top: 2rem;
-  writing-mode: vertical-rl;
-  text-orientation: sideways;
-  margin: 0 auto;
-  display: block;
-  font-size: 9.2rem;
-  transform: rotate(-180deg);
 }
 
 .modal-headerH {
@@ -1533,7 +1407,7 @@ span.passendHalterung {
     font-family: 'akaChen', sans-serif !important;
     color: #222222;
     background-color: #ffffff;
-    border: none !important;
+    border: none;
     border-top-right-radius: 2rem;
 }
 
@@ -1565,11 +1439,6 @@ span.passendHalterung {
 .wrapper-main .breadcrumbs {
   background: transparent;
   z-index: 1000;
-}
-
-@media (min-width: 768px) {
-.single-rightside {
-  position: unset;
 }
 }
 
@@ -1619,7 +1488,7 @@ a.nav-link.active:hover, a.nav-link:hover {
 }
 
 #single-carousel .owl-item img {
-  height: auto !important;
+  height: auto;
 }
 
 .cmp-product-thumb .main-image {
@@ -1658,9 +1527,6 @@ a.nav-link.active:hover, a.nav-link:hover {
   .cmp-product-thumb .thumb-inner{
     padding: 1rem;
   }
-  table.material_table td, table.material_table th {
-   font-size: 0.7rem;
- }
 }
 
 .single #single-carousel {
@@ -1671,8 +1537,10 @@ a.nav-link.active:hover, a.nav-link:hover {
     height: auto !important;
 }
 
+@media (min-width: 1200px) {
 #single-carousel .owl-item img {
-  height: auto;
+    height: auto;
+}
 }
 
 @media (min-width: 992px) {
@@ -1839,7 +1707,7 @@ span.vat-porto-info.small.text-muted, .btn-labeled, .basket-preview .totals, spa
 }
 
 .owl-thumbs .owl-thumb {
-	height: auto !important;
+	height: auto;
 }
 
 }
@@ -1898,20 +1766,6 @@ nav.navbar.megamenu #mainNavbarCollapsable ul.mainmenu > li > ul.collapse {
 .videoGallerySingle img {
   width: 4.2rem;
 }
-
-.passenderArtikel img {
-    margin: 0 auto;
-    display: block;
-}
-
-.halterung_inner h2 {
-  writing-mode: initial;
-  text-orientation: initial;
-  transform: none;
-  font-size: 3rem;
-  height: auto;
-}
-
 }
 
 /* Filter */
