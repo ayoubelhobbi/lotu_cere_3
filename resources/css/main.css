@@ -1352,6 +1352,12 @@ button.btn.btn-block.btn-default {
   color: #fff;
 }
 
+.amzLoginButton {
+    float: right;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+}
+
 /* The Close Button */
 .closeH {
     color: white;
