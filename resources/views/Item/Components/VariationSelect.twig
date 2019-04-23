@@ -8,7 +8,7 @@
                             v-for="(attributeValue, attributeValueId) in attribute.values"
                             :value="attributeValueId"
                             :disabled="!isEnabled(attributeId, attributeValueId)">
-                            ${ attributeValue } <span v-if="!isEnabled(attributeId, attributeValueId)">- ausverkauft</span><span v-else>- verfügbar</span>
+                            ${ attributeValue } <span v-if="!isEnabled(attributeId, attributeValueId)">- ausverkauft</span>
                         </option>
                 </select>
                 <label v-tooltip="isTextCut(attribute.name)" data-toggle="tooltip" data-placement="top" :title="attribute.name">${ attribute.name }</label>
