@@ -1489,6 +1489,7 @@ button.btn.btn-block.btn-default {
 
 .HalterungZweck {
   margin-top: -0.5rem;
+  color: #fff !important;
 }
 
 span.fuerHalterung, .fuerHalterungPassend {
