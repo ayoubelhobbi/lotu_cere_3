@@ -1358,6 +1358,11 @@ button.btn.btn-block.btn-default {
     margin-left: 1rem;
 }
 
+.amz-border-box {
+  background: transparent;
+  border
+}
+
 /* The Close Button */
 .closeH {
     color: white;
@@ -1395,6 +1400,14 @@ button.btn.btn-block.btn-default {
     text-decoration: none;
     cursor: pointer;
 }
+
+
+.HalterungContrainer h2 {
+   text-align: center;
+}
+
+
+
 
 .artikelHalterung {
   margin-top: .5rem;
