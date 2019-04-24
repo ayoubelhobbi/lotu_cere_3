@@ -1402,9 +1402,11 @@ button.btn.btn-block.btn-default {
 }
 
 
-.HalterungContrainer h2 {
+.HalterungContrainer h2, .HalterungContrainer h3 {
    text-align: center;
 }
+
+
 
 
 
