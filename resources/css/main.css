@@ -1238,6 +1238,8 @@ button.btn.btn-block.btn-default {
 .pricing-img {
   margin-bottom: 25px;
   max-width: 100%;
+  margin: 0 auto;
+  display: block;
 }
 
 .pricing-features {
