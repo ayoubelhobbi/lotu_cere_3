@@ -1404,6 +1404,10 @@ button.btn.btn-block.btn-default {
     cursor: pointer;
 }
 
+.btn-halterungen {
+  margin-top: 2rem;
+}
+
 .HalterungContrainer {
   background-color: #222;
 }
