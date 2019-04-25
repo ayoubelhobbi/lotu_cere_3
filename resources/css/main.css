@@ -1529,6 +1529,10 @@ span.passendHalterung {
   transform: rotate(-180deg);
 }
 
+.modal-header {
+  border-bottom: 1px solid #6c757d;
+}
+
 .modal-headerH {
     padding: 2px 16px;
     background-color: #5cb85c;
