@@ -1462,6 +1462,10 @@ button.btn.btn-block.btn-default {
   margin-top: 1rem;
 }
 
+.passenderArtikel h4 {
+  color: #fff;
+}
+
 .passenderArtikel img {
   width: 11rem;
 }
