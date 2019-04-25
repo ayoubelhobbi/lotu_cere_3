@@ -1410,6 +1410,7 @@ button.btn.btn-block.btn-default {
 
 .HalterungContrainer {
   background-color: #222;
+  margin-bottom: 4rem;
 }
 
 .HalterungContrainer h2, .HalterungContrainer h3 {
@@ -1421,7 +1422,7 @@ button.btn.btn-block.btn-default {
 }
 
 .col_inner {
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
   padding: 2rem;
 }
 
