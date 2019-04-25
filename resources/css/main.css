@@ -1414,8 +1414,9 @@ button.btn.btn-block.btn-default {
   margin-bottom: 4rem;
 }
 
-
-
+.col_inner button {
+  margin-top: 2rem;
+}
 
 .artikelHalterung {
   margin-top: .5rem;
