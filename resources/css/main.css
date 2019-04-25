@@ -1404,10 +1404,16 @@ button.btn.btn-block.btn-default {
     cursor: pointer;
 }
 
+.HalterungContrainer {
+  background-color: #222;
+}
 
 .HalterungContrainer h2, .HalterungContrainer h3 {
-   text-align: center;
-   padding: 2rem;
+  text-align: center;
+  padding: 1rem;
+  background-color: #fff;
+  color: #222;
+  margin: 2rem 0rem 2rem 0rem;
 }
 
 .col_inner {
