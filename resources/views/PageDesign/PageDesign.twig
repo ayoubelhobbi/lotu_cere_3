@@ -7,16 +7,18 @@
 {{ component( "Ceres::Customer.Components.Registration" ) }}
 {{ component( "Ceres::Basket.Components.AddItemToBasketOverlay" ) }}
 {{ component( "Ceres::PageDesign.Components.Popper" ) }}
-{{ component( "Ceres::Containers.Components.LastSeenItemList" ) }}
-{{ component( "Ceres::Newsletter.Components.NewsletterInput" ) }}
 {{ component( "Ceres::Category.Components.CategoryBreadcrumbs" ) }}
 {{ component( "Ceres::Customer.Components.ForgotPassword" ) }}
+
+{# TODO: remove if shop builder pages can be rebuild by migrations #}
+{{ component( "Ceres::Containers.Components.LastSeenItemList" ) }}
 {{ component( "Ceres::ItemList.Components.CategoryItem") }}
+{{ component( "Ceres::Newsletter.Components.NewsletterInput" ) }}
 {{ component( "Ceres::PageDesign.Components.Carousel" ) }}
 
 {% if request.get('isContentBuilder') == 1 %}
-{% include "Ceres::Widgets.WidgetComponents" %}
-	{% endif %}
+    {% include "Ceres::Widgets.WidgetComponents" %}
+{% endif %}
 
 {% set currencyFormat = config("Ceres.currency.format") %}
 {% set defaultLanguage = services.webstoreConfig.getDefaultLanguage() %}
@@ -37,6 +39,9 @@
 </head>
 
 <body>
+
+{{ LayoutContainer.show("Ceres::PageDesign.AfterOpeningBodyTag") }}
+
 <script>
     if('ontouchstart' in document.documentElement)
     {
@@ -104,26 +109,27 @@
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
-
                             <div class="modal-title h3">
                                 {{ trans("Ceres::Template.regCreateAccount") }}
 
-
                             </div>
+
                             <popper v-cloak class="ml-auto">
-                             <button slot="handle" class="btn btn-icon btn-secondary btn-sm">
-                                 <i class="fa fa-info"></i>
-                             </button>
-                             <div slot="title">
-                                 {{ trans("Ceres::Template.regContactInformations") }}
-                             </div>
-                             <ul slot="content" class='pl-3'>
-                                 <li class='mb-3'>{{ trans('Ceres::Template.regContactInfoText1') }}</li>
-                                 <li class='mb-3'>{{ trans('Ceres::Template.regContactInfoText2') }}</li>
-                                 <li class='mb-3'>{{ trans('Ceres::Template.regContactInfoText3') }}</li>
-                                 <li>{{ trans('Ceres::Template.regContactInfoText4') }}</li>
-                             </ul>
-                         </popper>
+                                <button slot="handle" class="btn btn-icon btn-secondary btn-sm">
+                                    <i class="fa fa-info"></i>
+                                </button>
+                                <div slot="title">
+                                    {{ trans("Ceres::Template.regContactInformations") }}
+                                </div>
+                                <ul slot="content" class='pl-3'>
+                                    <li class='mb-3'>{{ trans('Ceres::Template.regContactInfoText1') }}</li>
+                                    <li class='mb-3'>{{ trans('Ceres::Template.regContactInfoText2') }}</li>
+                                    <li class='mb-3'>{{ trans('Ceres::Template.regContactInfoText3') }}</li>
+                                    <li>{{ trans('Ceres::Template.regContactInfoText4') }}</li>
+                                </ul>
+                            </popper>
+
+                            <button type="button" class="close ml-0" data-dismiss="modal" aria-hidden="true">&times;</button>
                         </div>
                         <registration template="#vue-registration" :is-simple-registration="true" modal-element="simple-registration-modal-wrapper"></registration>
                     </div>
@@ -141,6 +147,7 @@
         <!-- ./PASSWORD RESET MODAL -->
 
         <!-- SHIPPINGCOSTS MODAL -->
+        {% if ceresConfig.global.shippingCostsCategoryId > 0 %}
         <div id="shippingscosts-modal-wrapper">
             <div class="modal fade" id="shippingscosts" tabindex="-1" role="dialog">
                 <div class="modal-dialog">
@@ -150,12 +157,18 @@
                             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                         </div>
                         <div class="modal-body">
-                            {% include category_template(ceresConfig.global.shippingCostsCategoryId, lang, webstoreConfig.webstoreId) ignore missing %}
+                            {% set shopBuilderShippingTemplate = shop_builder_category_template(ceresConfig.global.shippingCostsCategoryId) %}
+                            {% if shopBuilderShippingTemplate | trim is not empty %}
+                                {{ shopBuilderShippingTemplate | raw }}
+                            {% else %}
+                                {% include category_template(ceresConfig.global.shippingCostsCategoryId, lang, webstoreConfig.webstoreId) ignore missing %}
+                            {% endif %}
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        {% endif %}
         <!-- ./SHIPPINGCOSTS MODAL -->
     </div>
 </div>
@@ -163,16 +176,18 @@
 <script>
     App = {
         config: {{ ceresConfig | json_encode | raw }},
+        urls: {{ urls | json_encode | raw }},
         activeCurrency: "{{ currencyData[currencyFormat] }}",
         currencyPattern: {{  services.checkout.getCurrencyPattern() | json_encode | raw }},
         isCategoryView: {% if services.template.isCategory() == "1" %}true{% else %}false{% endif %},
         isCheckoutView : {% if services.template.isCheckout() == "1" %}true{% else %}false{% endif %},
         isSearch: {% if services.template.isSearch() == "1" %}true{% else %}false{% endif %},
-        templateEvent: "{{templateEvent}}",
+        templateEvent: "{{ templateEvent }}",
         language: "{{ lang }}",
         defaultLanguage: "{{ defaultLanguage }}",
         decimalSeparator: "{{ config("IO.format.separator_decimal") }}",
-        urlTrailingSlash: {{ urls.appendTrailingSlash | json_encode }}
+        urlTrailingSlash: {{ urls.appendTrailingSlash | json_encode }},
+        isShopBuilder: {{ isShopBuilder | default(false) | json_encode }}
     };
 </script>
 
@@ -199,13 +214,17 @@
 
 <script>
     vueEventHub = new Vue();
+
     {% if ceresConfig.log.checkSyntax %}
         var rootElement = document.getElementById("vue-app");
         rootElement.innerHTML = rootElement.innerHTML.replace(/(?:^|\s)(?::|v-bind:)\S+=(?:""|'')/g, '');
+
         var vueApp = new Vue({
             store: window.ceresStore
         });
+
         vueApp.$mount( rootElement.cloneNode(true) );
+
         if ( vueApp.$el.id === "vue-app")
         {
             document.body.replaceChild( vueApp.$el, rootElement );
@@ -216,27 +235,39 @@
             store: window.ceresStore
         });
     {% endif %}
+
+
     (function($) {
 
         var header = document.getElementById('page-header');
+        var headerElements = document.getElementById('page-header-children');
+        var headerLoaded = false;
         var unfixedElements = [];
+
         if ( !!header )
         {
             function calculateBodyOffset()
             {
-                if ( header.classList.contains('fixed-top'))
+                if (headerLoaded && header.classList.contains('fixed-top'))
                 {
                     var bodyOffset = 0;
                     // Get current header with children
-                    var children = document.getElementById('page-header').children;
+                    if(headerElements !== null){
+                        var children = headerElements.children;
+                    } else {
+                        return;
+                    }
+
                     for( var i = 0; i < children.length; i++ )
                     {
                         bodyOffset += children[i].getBoundingClientRect().height;
                     }
+
                     document.getElementById('vue-app').style.marginTop = bodyOffset + 'px';
                     document.getElementById('vue-app').style.minHeight = "calc(100vh - " + bodyOffset + "px)";
                 }
             }
+
             function getUnfixedElements()
             {
                 unfixedElements = [];
@@ -251,27 +282,31 @@
                 });
                 scrollUnfixedElements();
             }
+
             function scrollUnfixedElements()
             {
-                var scrollTop = window.scrollY;
-                unfixedElements.forEach(function(unfixed)
+                if (headerLoaded)
                 {
-                    var spacingTop = unfixed.height - scrollTop;
-                    if ( !!unfixed.element.previousElementSibling )
+                    var scrollTop = window.scrollY;
+                    unfixedElements.forEach(function(unfixed)
                     {
-                        unfixed.element.previousElementSibling.style.marginBottom = (spacingTop >= 0 ? spacingTop : 0) + 'px'
-                    }
-                    else
-                    {
-                        unfixed.element.parentElement.style.paddingTop = (spacingTop >= 0 ? spacingTop : 0) + 'px';
-                    }
-                    unfixed.element.style.position = 'absolute';
-                    unfixed.element.style.top = unfixed.top - scrollTop + 'px';
-                });
+                        var spacingTop = unfixed.height - scrollTop;
+                        if ( !!unfixed.element.previousElementSibling )
+                        {
+                            unfixed.element.previousElementSibling.style.marginBottom = (spacingTop >= 0 ? spacingTop : 0) + 'px'
+                        }
+                        else
+                        {
+                            unfixed.element.parentElement.style.paddingTop = (spacingTop >= 0 ? spacingTop : 0) + 'px';
+                        }
+                        unfixed.element.style.position = 'absolute';
+                        unfixed.element.style.top = unfixed.top - scrollTop + 'px';
+                    });
+                }
             }
-            getUnfixedElements();
 
             $(window).scroll(scrollUnfixedElements);
+
             $(document).on('shopbuilder.after.ready', function()
             {
                 unfixedElements.forEach(function(unfixed)
@@ -280,24 +315,36 @@
                 });
                 scrollUnfixedElements = function() {};
             });
+
             $(document).on('shopbuilder.before.viewUpdate shopbuilder.after.viewUpdate', function()
             {
                 calculateBodyOffset();
                 $('.owl-carousel').trigger('refresh.owl.carousel');
             });
+
             var headerImages = header.querySelectorAll("img");
-            if(headerImages.length)
-            {
-                for (var img in headerImages)
+
+            Promise.all(
+                Array.prototype.slice.call(headerImages).map(function(headerImage)
                 {
-                    headerImages[img].onload = function()
+                    return new Promise(function(resolve)
                     {
-                        calculateBodyOffset();
-                    }
-                }
-            }
+                        headerImage.onload = function()
+                        {
+                            resolve();
+                        }
+                    });
+                })
+            ).then(function()
+            {
+                headerLoaded = true;
+                getUnfixedElements();
+                calculateBodyOffset();
+            });
+
             calculateBodyOffset();
         }
+
         $(document).on('shopbuilder.after.drop shopbuilder.after.widget_replace', function(event, eventData, widgetElement)
         {
             var compiled = Vue.compile(widgetElement[0].outerHTML );
@@ -312,11 +359,14 @@
                     event.preventDefault();
                 });
             });
+
             $(component.$el).find('.owl-carousel').on('resized.owl.carousel', function()
             {
                 window.dispatchEvent(new Event('resize'));
             });
         });
+
+
     })(jQuery);
 </script>
 

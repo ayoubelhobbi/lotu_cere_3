@@ -127,7 +127,7 @@ class StouneServiceProvider extends ServiceProvider
      {
        $container->setTemplate('Stoune::Item.SingleItemWrapper');
        return false;
-     }, 0);
+     }, self::PRIORITY);
 
      /* Überschreiben der Variationen */
      $dispatcher->listen('IO.Component.Import', function(ComponentContainer $container){
