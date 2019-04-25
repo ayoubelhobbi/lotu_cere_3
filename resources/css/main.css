@@ -438,7 +438,7 @@ hr {
 }
 
 .btn-primary {
-  color: #000 !important;
+  color: #222 !important;
   background-color: #ffce00 !important;
   border-color: #ffce00;
   border-radius: 1.4rem;
@@ -1352,7 +1352,7 @@ button.btn.btn-block.btn-default {
 }
 
 .close {
-  color: #fff;
+  color: #6c757d;
 }
 
 .amzLoginButton {
@@ -1487,11 +1487,6 @@ button.btn.btn-block.btn-default {
   background: #fff;
   color: #222222;
   padding: 0.5rem 2rem 0.5rem 2rem;
-}
-
-.schrauben_halterung, .kleben_halterung {
-    margin-bottom: 2rem;
-    border-bottom: 1px solid #6c757d;
 }
 
 .HalterungZweck {
