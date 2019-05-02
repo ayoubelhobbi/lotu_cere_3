@@ -1363,7 +1363,7 @@ button.btn.btn-block.btn-default {
 
 .amz-border-box {
   background: transparent;
-  border
+  border: 0;
 }
 
 /* The Close Button */
