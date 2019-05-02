@@ -1364,6 +1364,7 @@ button.btn.btn-block.btn-default {
 .amz-border-box {
   background: #222 !important;
   border: 0 !important;
+  padding: 2rem !important;
 }
 
 /* The Close Button */
