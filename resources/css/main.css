@@ -621,6 +621,18 @@ span.vat-porto-info.small.text-muted, .btn-labeled, .basket-preview .totals, spa
   background: transparent;
 }
 
+.cookie-bar__wrapper {
+  background-color: #222;
+}
+
+.cookie-bar__btn {
+  background-color: #ffce00;
+  color: #222;
+  font-weight: 0;
+  font-family: akaChen;
+  border-radius: 1rem;
+}
+
 /*
 .input-unit input[type], .input-unit textarea, .input-unit input:not([type="checkbox"]), .input-unit input:not([type="radio"]), .input-unit .input-unit-preview {
 
