@@ -1418,9 +1418,11 @@ button.btn.btn-block.btn-default {
 
 /* LoginView */
 .loginCheckout h1 {
-  text-align: center;
-  padding: 1rem;
-  margin: 2rem 0rem 2rem 0rem;
+  display: none;
+}
+
+.loginCheckout h2 {
+  margin-bottom: 2rem;
 }
 
 
