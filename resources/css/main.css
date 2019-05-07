@@ -1416,6 +1416,17 @@ button.btn.btn-block.btn-default {
     cursor: pointer;
 }
 
+/* LoginView */
+.loginCheckout h1 {
+  text-align: center;
+  padding: 1rem;
+  margin: 2rem 0rem 2rem 0rem;
+}
+
+
+
+
+
 .btn-halterungen {
   margin-top: 2rem;
 }
