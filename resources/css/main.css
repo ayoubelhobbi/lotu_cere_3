@@ -1987,6 +1987,11 @@ nav.navbar.megamenu #mainNavbarCollapsable ul.mainmenu > li > ul.collapse {
 .wrapper-main #page-body {
     margin-top: 1rem;
 }
+
+.wrapper-main header .controls-list {
+  width: 26.8rem;
+}
+
 }
 
 /* Filter */
