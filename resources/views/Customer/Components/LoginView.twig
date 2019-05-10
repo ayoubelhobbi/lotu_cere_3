@@ -10,23 +10,16 @@
           <div class="row">
             <div class="col-sm-6">
               <div class="col_inner">
-                <h2>Gastbestellung</h2>
-
-
+                <h2>Noch kein Kunde?</h2>
+                <p class="KeinKundeRegister">Als Kunde können Sie jederzeit auf unser Konto haben. Dieser Zugriff ermöglicht Ihnen Ihre Bestellungen jederzeit im Griff zu haben.</p>
+                <p class="keinKundeGast">Sie können bei uns auch als Gast bestellen.</p>
 
                 <div class="KeinKundeButtons">
-                          <div class="input-unit" data-validate="mail">
-                              {% set uid_mail = uid() %}
-                              <input type="email" name="email" id="{{ uid_mail }}" v-model="email" data-autofocus>
-                              <label for="{{ uid_mail }}">{{ trans("Ceres::Template.loginEmail") }}*</label>
-                          </div>
-                          <span class="error-msg">{{ trans("Ceres::Template.loginEnterConfirmEmail") }}</span>
 
-                          <button @click.prevent="validate" :disabled="isDisabled" class="btn btn-primary btn-medium float-right">
-                                <i v-waiting-animation="isDisabled" class="fa fa-arrow-right" aria-hidden="true"></i>
-                                {{ trans("Ceres::Template.loginNext") }}
-                            </button>
-                    </div>
+                  {% if "my-account" not in backlink %}
+                      {% include "Stoune::Customer.Components.GuestLoginStoune" %}
+                  {% endif %}
+                </div>
 
               </div>
             </div>
