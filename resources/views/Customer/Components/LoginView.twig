@@ -23,7 +23,7 @@
                 </div>
                   {% if "my-account" not in backlink %}
                       <div class="col-sm-6">
-                        {{ component( "Stoune::Customer.Components.GuestLoginStoune" ) }}
+                        <login template="#vue-guest-login" backlink="{{ backlink | url_encode }}" has-to-forward="true"></login>
                       </div>
                   {% endif %}
                 </div>
