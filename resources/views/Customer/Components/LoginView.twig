@@ -23,11 +23,7 @@
                 </div>
                   {% if "my-account" not in backlink %}
                       <div class="col-sm-6">
-                          <button class="btn btn-primary btn-block mb-3" @click="openGuestModal()">
-                              <i class="fa fa-shopping-bag" aria-hidden="true"></i>
-                              {{ trans("Ceres::Template.loginOrderAsGuest") }}
-
-                          </button>
+                        {% include "Stoune::Customer.Components.SingleItem.GuestLoginStoune" %}
                       </div>
                   {% endif %}
                 </div>
