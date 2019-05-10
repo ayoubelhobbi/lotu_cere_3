@@ -10,9 +10,7 @@
           <div class="row">
             <div class="col-sm-6">
               <div class="col_inner">
-                <h2>Noch kein Kunde?</h2>
-                <p class="KeinKundeRegister">Als Kunde können Sie jederzeit auf unser Konto haben. Dieser Zugriff ermöglicht Ihnen Ihre Bestellungen jederzeit im Griff zu haben.</p>
-                <p class="keinKundeGast">Sie können bei uns auch als Gast bestellen.</p>
+                <h2>Gastbestellung</h2>
 
                 <div class="KeinKundeButtons">
                 <div class="col-sm-{% if 'my-account' not in backlink %}6{% else %}12{% endif %}">
@@ -22,14 +20,12 @@
                     </a>
                 </div>
                   {% if "my-account" not in backlink %}
-                      <div class="col-sm-6">
-                          <button class="btn btn-primary btn-block mb-3" @click="openGuestModal()">
-                              <i class="fa fa-shopping-bag" aria-hidden="true"></i>
-                              {{ trans("Ceres::Template.loginOrderAsGuest") }}
-
-                          </button>
-                      </div>
-                  {% endif %}
+                    <div class="input-unit" data-validate="mail">
+                           {% set uid_mail = uid() %}
+                           <input type="email" name="email" id="{{ uid_mail }}" v-model="email" data-autofocus>
+                           <label for="{{ uid_mail }}">{{ trans("Ceres::Template.loginEmail") }}*</label>
+                       </div>
+                       <span class="error-msg">{{ trans("Ceres::Template.loginEnterConfirmEmail") }}</span>
                 </div>
 
               </div>
