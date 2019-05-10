@@ -12,6 +12,8 @@
               <div class="col_inner">
                 <h2>Gastbestellung</h2>
 
+              
+
                 <div class="KeinKundeButtons">
                 <div class="col-sm-{% if 'my-account' not in backlink %}6{% else %}12{% endif %}">
                     <a class="btn btn-primary btn-block mb-3" href="{{ urls.registration }}{% if backlink | trim is not empty %}?backlink={{ backlink | url_encode}}{% endif %}">
@@ -20,17 +22,14 @@
                     </a>
                 </div>
                   {% if "my-account" not in backlink %}
-                    <div class="input-unit" data-validate="mail">
-                           {% set uid_mail = uid() %}
-                           <input type="email" name="email" id="{{ uid_mail }}" v-model="email" data-autofocus>
-                           <label for="{{ uid_mail }}">{{ trans("Ceres::Template.loginEmail") }}*</label>
-                       </div>
-                       <span class="error-msg">{{ trans("Ceres::Template.loginEnterConfirmEmail") }}</span>
+                      <div class="col-sm-6">
+                          <button class="btn btn-primary btn-block mb-3" @click="openGuestModal()">
+                              <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+                              {{ trans("Ceres::Template.loginOrderAsGuest") }}
 
-                       <button @click.prevent="validate" :disabled="isDisabled" class="btn btn-primary btn-medium float-right">
-                                <i v-waiting-animation="isDisabled" class="fa fa-arrow-right" aria-hidden="true"></i>
-                                {{ trans("Ceres::Template.loginNext") }}
-                        </button>
+                          </button>
+                      </div>
+                  {% endif %}
                 </div>
 
               </div>
@@ -99,7 +98,7 @@
             </div>
         </div>
 
-      
+        <guest-login template="#vue-guest-login" backlink="{{ backlink | url_encode }}"></guest-login>
 
     </div>
 </script>
