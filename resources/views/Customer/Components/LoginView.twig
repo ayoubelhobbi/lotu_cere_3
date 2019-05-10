@@ -26,6 +26,11 @@
                            <label for="{{ uid_mail }}">{{ trans("Ceres::Template.loginEmail") }}*</label>
                        </div>
                        <span class="error-msg">{{ trans("Ceres::Template.loginEnterConfirmEmail") }}</span>
+
+                       <button @click.prevent="validate" :disabled="isDisabled" class="btn btn-primary btn-medium float-right">
+                                <i v-waiting-animation="isDisabled" class="fa fa-arrow-right" aria-hidden="true"></i>
+                                {{ trans("Ceres::Template.loginNext") }}
+                            </button>
                 </div>
 
               </div>
