@@ -23,7 +23,7 @@
                 </div>
                   {% if "my-account" not in backlink %}
                       <div class="col-sm-6">
-                        {% include "Stoune::Customer.Components.GuestLoginStoune" %}
+                        {{ component( "Stoune::Customer.Components.GuestLoginStoune" ) }}
                       </div>
                   {% endif %}
                 </div>
