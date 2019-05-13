@@ -527,8 +527,12 @@ a.bg-primary:focus, a.bg-primary:hover {
     color: #b2b1a7;
 }
 
+.gastBestellung {
+  margin-bottom: 1rem;
+}
+
 .registrierenBestellung {
-  margin-top: 2rem;
+  margin-top: 5rem;
 }
 
 .page-link:focus, .page-link:hover {
@@ -2008,6 +2012,11 @@ nav.navbar.megamenu #mainNavbarCollapsable ul.mainmenu > li > ul.collapse {
   transform: none;
   font-size: 3rem;
   height: auto;
+}
+
+.keinKunde {
+  border-right: none;
+  border-bottom: 1px solid #6c757d; 
 }
 
 }
