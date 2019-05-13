@@ -518,8 +518,13 @@ a.bg-primary:focus, a.bg-primary:hover {
   border-right: 1px solid #6c757d;
 }
 
-.KeinKundeRegister {
-  margin-bottom: 5rem;
+#guest-login-form-11 .input-unit {
+    border-radius: 0;
+    border: 1px solid #dcdbd8;
+}
+
+#guest-login-form-11 label {
+    color: #b2b1a7;
 }
 
 .page-link:focus, .page-link:hover {
