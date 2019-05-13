@@ -514,6 +514,14 @@ a.bg-primary:focus, a.bg-primary:hover {
   color: #ffffff;
 }
 
+.keinKunde {
+  border-right: 1px solid #6c757d;
+}
+
+.KeinKundeRegister {
+  margin-bottom: 5rem;
+}
+
 .page-link:focus, .page-link:hover {
   background-color: transparent;
   border-color: transparent;
