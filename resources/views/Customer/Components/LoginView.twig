@@ -1,8 +1,7 @@
 {% import "Ceres::PageDesign.Macros.LayoutContainer" as LayoutContainer %}
-{% include "Stoune::Customer.Components.GuestLoginStoune" %}
 {% set backlink = request.get("backlink") %}
 
-{{ component( "Stoune::Customer.Components.GuestLoginStoune" ) }}
+{{ component( "Ceres::Customer.Components.GuestLogin" ) }}
 
 <script type="x/template" id="vue-login-view" >
     <div class="container-max login">
@@ -12,7 +11,7 @@
             <div class="col-sm-6">
               <div class="col_inner keinKunde">
                 <h2>Noch kein Kunde?</h2>
-                <p class="KeinKundeRegister">Sie können bei uns bestellen ohne sich zu registrieren (Als Gast bestellen) oder ein Konto erstellen (Registrieren)</p>
+                <p class="KeinKundeRegister">Sie können bei uns bestellen ohne sich zu registrieren (Als Gast bestellen) oder ein Konto erstellen (Registrieren).</p>
 
                 <div class="KeinKundeButtons">
 

@@ -138,13 +138,21 @@ class StouneServiceProvider extends ServiceProvider
       }, self::PRIORITY);
 
 
-      /* Überschreiben der Login Seite */
-      $dispatcher->listen('IO.Component.Import', function(ComponentContainer $container){
-      if( $container->getOriginComponentTemplate() == 'Ceres::Customer.Components.LoginView')
-      {
-         $container->setNewComponentTemplate('Stoune::Customer.Components.LoginView');
-      }
-       }, self::PRIORITY);
+    /* Überschreiben der Login Seite */
+    $dispatcher->listen('IO.Component.Import', function(ComponentContainer $container){
+    if( $container->getOriginComponentTemplate() == 'Ceres::Customer.Components.LoginView')
+    {
+       $container->setNewComponentTemplate('Stoune::Customer.Components.LoginView');
+    }
+     }, self::PRIORITY);
+
+     /* Überschreiben der Login Seite */
+     $dispatcher->listen('IO.Component.Import', function(ComponentContainer $container){
+     if( $container->getOriginComponentTemplate() == 'Ceres::Customer.Components.GuestLogin')
+     {
+        $container->setNewComponentTemplate('Stoune::Customer.Components.GuestLogin');
+     }
+      }, self::PRIORITY);
 
     }
 }
