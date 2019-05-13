@@ -31,11 +31,15 @@
         template: "#guest-login-stoune",
         delimiters: ["${", "}"],
 
-        data()
-        {
-            return {
-                count: 0
-            };
+        props: {
+        template: {
+            type: String,
+            default: "#vue-user-login-handler"
+        },
+        showRegistration: {
+            type: Boolean,
+            default: true
         }
+      },
     });
 </script>
