@@ -2,10 +2,6 @@
     <div>
         <form :id="'guest-login-form-' +_uid" class="mb-3 login-pwd-reset">
 
-
-
-
-
                             <div class="input-unit" data-validate="mail">
                                 {% set uid_mail = uid() %}
                                 <input type="email" name="email" id="{{ uid_mail }}" v-model="email" data-autofocus>
@@ -18,7 +14,6 @@
                                 <i v-waiting-animation="isDisabled" class="fa fa-arrow-right" aria-hidden="true"></i>
                                 {{ trans("Ceres::Template.loginNext") }}
                             </button>
-
 
         </form>
     </div>
