@@ -515,7 +515,7 @@ a.bg-primary:focus, a.bg-primary:hover {
 }
 
 .keinKunde {
-  border-right: 1px solid #6c757d;
+
 }
 
 #guest-login-form-11 .input-unit {
@@ -528,7 +528,7 @@ a.bg-primary:focus, a.bg-primary:hover {
 }
 
 .gastBestellung {
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
 }
 
 .registrierenBestellung {
@@ -2016,8 +2016,9 @@ nav.navbar.megamenu #mainNavbarCollapsable ul.mainmenu > li > ul.collapse {
 
 .keinKunde {
   border-right: none;
-  border-bottom: 1px solid #6c757d; 
-}
+  border-bottom: 1px solid #6c757d;
+  padding-bottom: 5remß09
+  }
 
 }
 
@@ -2052,3 +2053,5 @@ nav.navbar.megamenu #mainNavbarCollapsable ul.mainmenu > li > ul.collapse {
 .filter-category .card .form-outer .form-check:last-of-type { margin-bottom: 0 !important; }
 .filter-category .card .form-check .form-check-input:checked+label { font-weight: bold; }
 .filter-category .card .form-check .form-check-input:checked+label::before { display: none !important; }
+4/*-+123,0
+vz6547z6
