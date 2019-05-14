@@ -19,7 +19,7 @@
               </div>
               <div class="col-sm bereitsKunde">
                   <div class="col-inner">
-                      <h2Ich bin bereits Kunde</h2>
+                      <h2>Ich bin bereits Kunde</h2>
                       <login template="#vue-login" backlink="{{ backlink | url_encode }}" has-to-forward="true"></login>
                   </div>
               </div>
@@ -31,6 +31,10 @@
                           <i class="fa fa-user-plus" aria-hidden="true"></i>
                           {{ trans("Ceres::Template.loginRegister") }}
                       </a>
+                      <div style="display: none;">
+                        <p>Welcome to the site <b id='boldStuff'>dude</b> </p>
+                        <input type='button' onclick='changeText()' value='Change Text'/>
+                      </div>
                   </div>
               </div>
           </div>
@@ -40,11 +44,9 @@
 
     <script2>
 
-    $(document).ready(function(){
-    $(".keinKundebutton").click(function(){
-       $('.keinKunde').html('Demo text');
-     });
-    });
+    function changeText(){
+  	document.getElementById('boldStuff').innerHTML = 'Fred Flinstone';
+  }
 
     </script2>
 
