@@ -11,3 +11,7 @@ tippy('.iconsImages img', {
 function myFunction() {
     document.getElementById("demo").innerHTML = "Hallo Welt";
 }
+
+function changeText(){
+document.getElementById('boldStuff').innerHTML = 'Fred Flinstone';
+}
