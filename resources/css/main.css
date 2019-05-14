@@ -514,8 +514,8 @@ a.bg-primary:focus, a.bg-primary:hover {
   color: #ffffff;
 }
 
-.keinKunde {
-
+.gastBestellung, .keinKunde, .bereitsKunde{
+  padding: 2rem;
 }
 
 #guest-login-form-11 .input-unit {
@@ -529,6 +529,7 @@ a.bg-primary:focus, a.bg-primary:hover {
 
 .gastBestellung {
   margin-bottom: 3rem;
+  border-bottom: 1px solid #6c757d;
 }
 
 .gastBestellung h2 {
