@@ -530,6 +530,9 @@ a.bg-primary:focus, a.bg-primary:hover {
 .gastBestellung {
   margin-bottom: 3rem;
   border-bottom: 1px solid #6c757d;
+  padding-bottom: 3rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .gastBestellung h2 {
