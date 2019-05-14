@@ -11,6 +11,7 @@
               <div class="col-12 gastBestellung">
                   <div class="col-inner">
                       <h2>Gastbestellung</h2>
+                      <p>E-Mail-Adresse eingeben und mit der Bestellung fortfahren.</p>
                       {% if "my-account" not in backlink %}
                       <guest-login template="#vue-guest-login" backlink="{{ backlink | url_encode }}"></guest-login>
                       {% endif %}
@@ -18,13 +19,13 @@
               </div>
               <div class="col-sm bereitsKunde">
                   <div class="col-inner">
-                      <h2>Sind Sie bereits Kunde?</h2>
+                      <h2Ich bin bereits Kunde</h2>
                       <login template="#vue-login" backlink="{{ backlink | url_encode }}" has-to-forward="true"></login>
                   </div>
               </div>
               <div class="col-sm keinKunde">
                   <div class="col-inner">
-                      <h2>Noch kein Kunde?</h2>
+                      <h2>Kunde werden</h2>
                       <p>Einfach registrieren und Ihre Daten nie wieder manuell eingeben. Sie haben immer Zugriff auf Ihre Bestellungen.</p>
                       <a class="btn btn-primary btn-medium float-right" href="{{ urls.registration }}{% if backlink | trim is not empty %}?backlink={{ backlink | url_encode}}{% endif %}">
                           <i class="fa fa-user-plus" aria-hidden="true"></i>
