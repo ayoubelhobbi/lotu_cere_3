@@ -8,22 +8,22 @@
       <div class="loginCheckout">
           <h1>Anmelden</h1>
           <div class="row">
-              <div class="col-12">
-                  <div class="col-inner gastBestellung">
+              <div class="col-12 gastBestellung">
+                  <div class="col-inner">
                       <h2>Gastbestellung</h2>
                       {% if "my-account" not in backlink %}
                       <guest-login template="#vue-guest-login" backlink="{{ backlink | url_encode }}"></guest-login>
                       {% endif %}
                   </div>
               </div>
-              <div class="col-6">
-                  <div class="col-inner bereitsKunde">
+              <div class="col-6 bereitsKunde">
+                  <div class="col-inner">
                       <h2>Sind Sie bereits Kunde?</h2>
                       <login template="#vue-login" backlink="{{ backlink | url_encode }}" has-to-forward="true"></login>
                   </div>
               </div>
-              <div class="col-6">
-                  <div class="col-inner keinKunde">
+              <div class="col-6 keinKunde">
+                  <div class="col-inner">
                       <h2>Noch kein Kunde?</h2>
                       <p>Einfach registrieren und Ihre Daten nie wieder manuell eingeben. Sie haben immer Zugriff auf Ihre Bestellungen.</p>
                       <a class="btn btn-primary btn-medium float-right" href="{{ urls.registration }}{% if backlink | trim is not empty %}?backlink={{ backlink | url_encode}}{% endif %}">
