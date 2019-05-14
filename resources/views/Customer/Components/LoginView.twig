@@ -27,7 +27,7 @@
                   <div class="col-inner">
                       <h2>Kunde werden</h2>
                       <p>Einfach registrieren und Ihre Daten nie wieder manuell eingeben. Sie haben immer Zugriff auf Ihre Bestellungen.</p>
-                      <a class="btn btn-primary btn-medium float-right" href="{{ urls.registration }}{% if backlink | trim is not empty %}?backlink={{ backlink | url_encode}}{% endif %}">
+                      <a class="btn btn-primary btn-medium float-right keinKundebutton" href="{{ urls.registration }}{% if backlink | trim is not empty %}?backlink={{ backlink | url_encode}}{% endif %}">
                           <i class="fa fa-user-plus" aria-hidden="true"></i>
                           {{ trans("Ceres::Template.loginRegister") }}
                       </a>
@@ -36,4 +36,16 @@
           </div>
       </div>
     </div>
+
+
+    <script2>
+
+    $(document).ready(function(){
+    $(".keinKundebutton").click(function(){
+       $('.keinKunde').html('Demo text');
+     });
+    });
+
+    </script2>
+
 </script>

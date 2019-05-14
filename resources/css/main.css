@@ -533,12 +533,16 @@ a.bg-primary:focus, a.bg-primary:hover {
   padding-bottom: 3rem;
   padding-left: 2rem;
   padding-right: 2rem;
-  
+
 }
 
 .gastBestellung h2 {
   text-align: center;
   margin-bottom: 2rem;
+}
+
+.gastBestellung p {
+  text-align: center;
 }
 
 .registrierenBestellung {
