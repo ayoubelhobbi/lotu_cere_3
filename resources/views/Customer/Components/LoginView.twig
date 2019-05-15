@@ -23,7 +23,7 @@
                       <login template="#vue-login" backlink="{{ backlink | url_encode }}" has-to-forward="true"></login>
                   </div>
               </div>
-              <div class="col-sm keinKunde">
+              <div class="col-sm keinKunde" id="keinK">
                   <div class="col-inner">
                       <h2>Kunde werden</h2>
                       <p>Einfach registrieren und Ihre Daten nie wieder manuell eingeben. Sie haben immer Zugriff auf Ihre Bestellungen.</p>
@@ -42,3 +42,9 @@
     </div>
 
 </script>
+
+<script2>
+  function changeText(){
+    document.getElementById('keinK').innerHTML = '<login template="#vue-login" backlink="{{ backlink | url_encode }}" has-to-forward="true"></login>';
+    }
+</script2>
