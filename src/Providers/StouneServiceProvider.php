@@ -29,7 +29,7 @@ class StouneServiceProvider extends ServiceProvider
 
     }
 
-    public function boot(Dispatcher $dispatcher)
+    public function boot(Twig $twig, Dispatcher $dispatcher)
     {
 
           /* Skripte einbinden  */
