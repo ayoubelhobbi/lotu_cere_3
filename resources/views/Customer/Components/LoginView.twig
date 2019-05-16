@@ -27,25 +27,16 @@
                   <div class="col-inner">
                       <h2>Kunde werden</h2>
                       <p>Einfach registrieren und Ihre Daten nie wieder manuell eingeben. Sie haben immer Zugriff auf Ihre Bestellungen.</p>
-                      <a class="btn btn-primary btn-medium float-right keinKundebutton" href="{{ urls.registration }}{% if backlink | trim is not empty %}?backlink={{ backlink | url_encode}}{% endif %}">
+                      <a class="btn btn-primary btn-medium float-right keinKundebutton" href="#registrierung" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="registrierung">
                           <i class="fa fa-user-plus" aria-hidden="true"></i>
                           {{ trans("Ceres::Template.loginRegister") }}
                       </a>
-                      <div style="display: none;">
-                        <p>Welcome to the site <b id='boldStuff'>dude</b> </p>
-                        <input type='button' onclick='changeText()' value='Change Text'/>
 
-                        <p>
-
-                          <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Toggle second element</button>
-
-                        </p>
-
-                            <div class="collapse multi-collapse" id="multiCollapseExample2">
-                                <registration template="#vue-registration" backlink="{{ backlink | url_encode }}"></registration>
-                            </div>
-  
+                      <div class="collapse multi-collapse" id="registrierung">
+                          <registration template="#vue-registration" backlink="{{ backlink | url_encode }}"></registration>
                       </div>
+
+
                   </div>
               </div>
           </div>
