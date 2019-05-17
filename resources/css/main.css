@@ -686,6 +686,14 @@ span.vat-porto-info.small.text-muted, .btn-labeled, .basket-preview .totals, spa
     margin-top: 4rem;
 }
 
+.keinKundebutton[aria-expanded="false"]:before{
+  content:"[ View More ]";
+}
+
+.keinKundebutton[aria-expanded="true"]:before{
+  content:"[ View Less ]";
+}
+
 /* .widget-text .widget-inner {
   padding: 0;
 } */
