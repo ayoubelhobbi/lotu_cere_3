@@ -687,11 +687,11 @@ span.vat-porto-info.small.text-muted, .btn-labeled, .basket-preview .totals, spa
 }
 
 .keinKundebutton[aria-expanded="false"]:before{
-  content:"[ View More ]";
+  content:"Jetzt registrieren";
 }
 
 .keinKundebutton[aria-expanded="true"]:before{
-  content:"[ View Less ]";
+  content:"Schließen";
 }
 
 /* .widget-text .widget-inner {
