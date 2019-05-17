@@ -694,6 +694,11 @@ span.vat-porto-info.small.text-muted, .btn-labeled, .basket-preview .totals, spa
   content:"Schließen";
 }
 
+.gastBestellung .col-inner {
+  margin-left: 0 auto;
+  max-width: 800px;
+}
+
 /* .widget-text .widget-inner {
   padding: 0;
 } */
