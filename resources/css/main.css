@@ -1815,6 +1815,10 @@ a.nav-link.active:hover, a.nav-link:hover {
   table.material_table td, table.material_table th {
    font-size: 0.7rem;
  }
+
+ .bereitsKunde {
+     border-right: none;
+ }
 }
 
 .single #single-carousel {
