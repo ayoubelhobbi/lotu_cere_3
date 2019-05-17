@@ -519,6 +519,10 @@ a.bg-primary:focus, a.bg-primary:hover {
   background-color: #222;
 }
 
+.bereitsKunde {
+    border-right: 1px solid #6c757d;
+}
+
 #guest-login-form-11 .input-unit {
     border-radius: 0;
     border: 1px solid #dcdbd8;
