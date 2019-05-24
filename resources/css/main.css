@@ -677,6 +677,9 @@ span.vat-porto-info.small.text-muted, .btn-labeled, .basket-preview .totals, spa
   font-family: akaChen, sans-serif !important;
   border-color: #222 !important;
 }
+.cookie-bar__btn: hover {
+  opacity: 0.8 !important;
+}
 
 .startseite_element {
     background: #222;
