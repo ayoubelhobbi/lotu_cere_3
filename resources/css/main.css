@@ -290,6 +290,13 @@ body > #vue-app, body > #vue-error {
   border: none;
 }
 
+.ruLa_inner {
+  margin: 1rem;
+  padding: 2rem;
+  background: #222;
+  }
+  
+
 .vielenDankProcessing {
   margin-top: 2rem;
 }
