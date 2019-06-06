@@ -296,6 +296,13 @@ body > #vue-app, body > #vue-error {
   background: #222;
   }
 
+.ruTexte {
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  color: rgb(34, 34, 34);
+  padding: 2rem;
+}
+
 
 .vielenDankProcessing {
   margin-top: 2rem;
