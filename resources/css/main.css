@@ -308,6 +308,10 @@ body > #vue-app, body > #vue-error {
   padding: 2rem;
 }
 
+.ruTexte h3 {
+    color: #222222;
+    margin-top: 2rem;
+}
 
 .vielenDankProcessing {
   margin-top: 2rem;
