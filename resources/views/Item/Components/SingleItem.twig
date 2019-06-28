@@ -13,7 +13,7 @@
                 <div class="col-md-7">
                     <slot name="ImageCarousel"></slot>
                     <div class="ueberschriftGallerie">
-                      <span v-for="(property, index) in currentVariation.properties" v-if="property.property.id == 25">Videos</span>
+                      <span v-for="(property, index) in currentVariation.properties" v-if="property.group.id == 10">Videos</span>
                     </div>
                     <div v-for="(property, index) in currentVariation.properties" v-if="property.group.id == 10" class="videoGallerySingle" >
                         <a v-bind:href="'https://www.youtube.com/embed/'+property.texts.value+'?rel=0'" data-lity>
