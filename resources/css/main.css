@@ -713,6 +713,13 @@ span.vat-porto-info.small.text-muted, .btn-labeled, .basket-preview .totals, spa
     margin: 1.7rem 0;
 }
 
+.Startseite_verteiler {
+    text-align: center;
+    background-color: #220;
+    padding: 2rem;
+    margin: 1rem;
+}
+
 #registrierung {
     margin-top: 5rem;
 }
