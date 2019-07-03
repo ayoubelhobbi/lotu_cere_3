@@ -719,6 +719,10 @@ span.vat-porto-info.small.text-muted, .btn-labeled, .basket-preview .totals, spa
     padding: 2rem;
 }
 
+.Startseite_verteiler img {
+    margin-bottom: 2rem;
+}
+
 #registrierung {
     margin-top: 5rem;
 }
