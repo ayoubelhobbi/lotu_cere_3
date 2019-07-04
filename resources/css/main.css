@@ -706,11 +706,16 @@ span.vat-porto-info.small.text-muted, .btn-labeled, .basket-preview .totals, spa
 
 .startseite_element {
     background: #222;
-    padding: 3rem;
+    padding: 1rem;
 }
 
-.startseite_texte p {
-    margin: 1.7rem 0;
+.startseite_texte {
+  margin-top: 1rem;
+}
+
+.startseite_img img {
+    width: 6rem;
+    float: right;
 }
 
 .Startseite_verteiler {
@@ -720,7 +725,8 @@ span.vat-porto-info.small.text-muted, .btn-labeled, .basket-preview .totals, spa
 }
 
 .Startseite_verteiler img {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
+  width: 150px;
 }
 
 .Startseite_verteiler:hover {
