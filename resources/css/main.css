@@ -1859,6 +1859,10 @@ a.nav-link.active:hover, a.nav-link:hover {
     width: 100%;
     height: 186px;
 }
+
+.Startseite_verteiler {
+  margin: -0.8rem;
+}
 }
 
 @media (max-width: 991px) {
