@@ -1869,6 +1869,10 @@ a.nav-link.active:hover, a.nav-link:hover {
 .Startseite_verteiler {
   margin: -0.8rem;
 }
+
+.startseite_element {
+  margin: -0.8rem;
+}
 }
 
 @media (max-width: 991px) {
