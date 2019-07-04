@@ -716,11 +716,11 @@ span.vat-porto-info.small.text-muted, .btn-labeled, .basket-preview .totals, spa
 .Startseite_verteiler {
     text-align: center;
     background-color: #220;
-    padding: 1rem;
+    padding: 0.5rem;
 }
 
 .Startseite_verteiler img {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 .Startseite_verteiler:hover {
