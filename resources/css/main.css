@@ -1159,7 +1159,8 @@ span.vat-porto-info.small.text-muted, .btn-labeled, .basket-preview .totals, spa
 }
 
 .videoLandingpage {
-  padding: 3rem;
+  background: url(https://cdn02.plentymarkets.com/o6fqzre3r8ga/frontend/rutenhalter/fasten_rutenhalter.jpg);
+  background-position-x: right;
 }
 
 .videoLandingpage img {
@@ -1168,9 +1169,14 @@ span.vat-porto-info.small.text-muted, .btn-labeled, .basket-preview .totals, spa
 }
 
 .videoLandingpage h2 {
-    text-align: center;
-    margin-top: 2rem;
-}
+  text-align: center;
+  margin-top: 2rem;
+  background-color: #fff;
+  color: #222;
+  padding: 1rem;
+  max-width: 26rem;
+  margin: 0 auto;
+  }
 
 .videoGallerySingle img {
     width: 9rem;
