@@ -1164,8 +1164,15 @@ span.vat-porto-info.small.text-muted, .btn-labeled, .basket-preview .totals, spa
 }
 
 .videoLandingpage img {
-    margin: 0 auto;
-    display: block;
+  margin: 0 auto;
+  display: block;
+  opacity: 0.7;
+  padding-bottom: 2rem;
+  filter: grayscale(1);
+}
+
+.videoLandingpage:hover img {
+    filter: drop-shadow(2px 4px 6px black);
 }
 
 .videoLandingpage h2 {
