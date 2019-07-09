@@ -306,6 +306,7 @@ body > #vue-app, body > #vue-error {
   background-color: rgb(255, 255, 255);
   color: rgb(34, 34, 34);
   padding: 2rem;
+  filter: drop-shadow(2px 4px 6px black);
 }
 
 .ruTexte h3 {
@@ -1183,6 +1184,7 @@ span.vat-porto-info.small.text-muted, .btn-labeled, .basket-preview .totals, spa
   padding: 1rem;
   max-width: 26rem;
   margin: 0 auto;
+  filter: drop-shadow(2px 4px 6px black);
   }
 
 .videoGallerySingle img {
