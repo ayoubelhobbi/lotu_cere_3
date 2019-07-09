@@ -1163,6 +1163,7 @@ span.vat-porto-info.small.text-muted, .btn-labeled, .basket-preview .totals, spa
 .videoLandingpage {
   background: url(https://cdn02.plentymarkets.com/o6fqzre3r8ga/frontend/rutenhalter/fasten_rutenhalter.jpg);
   background-position-x: right;
+  padding: 4rem;
 }
 
 .videoLandingpage img {
