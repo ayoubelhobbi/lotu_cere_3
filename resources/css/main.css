@@ -706,6 +706,11 @@ span.vat-porto-info.small.text-muted, .btn-labeled, .basket-preview .totals, spa
 
 .startseite_element {
     background: #222;
+    padding: 3rem;
+}
+
+.startseite_footer {
+    background: #222;
     padding: 1rem;
 }
 
@@ -1153,6 +1158,10 @@ span.vat-porto-info.small.text-muted, .btn-labeled, .basket-preview .totals, spa
   font-family: "akaChen", sans-serif;
 }
 
+.videoLandingpage {
+  padding: 3rem;
+}
+
 .videoLandingpage img {
     margin: 0 auto;
     display: block;
@@ -1160,6 +1169,7 @@ span.vat-porto-info.small.text-muted, .btn-labeled, .basket-preview .totals, spa
 
 .videoLandingpage h2 {
     text-align: center;
+    margin-top: 2rem;
 }
 
 .videoGallerySingle img {
@@ -1870,7 +1880,7 @@ a.nav-link.active:hover, a.nav-link:hover {
   margin: -0.8rem;
 }
 
-.startseite_element {
+.startseite_footer {
   margin: -0.8rem;
 }
 }
