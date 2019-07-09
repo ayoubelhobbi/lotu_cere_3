@@ -295,6 +295,7 @@ body > #vue-app, body > #vue-error {
   margin: 1rem;
   padding: 2rem;
   background: #222;
+  filter: drop-shadow(2px 4px 6px black);
   }
 
   .weissBack {
