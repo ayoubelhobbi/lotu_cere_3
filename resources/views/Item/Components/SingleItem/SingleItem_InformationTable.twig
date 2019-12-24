@@ -26,8 +26,9 @@
                 <div class="my-4" v-html="currentVariation.texts.description">
                 </div>
                 <span class="videoInDerBeschreibung" v-for="(property, index) in currentVariation.properties" v-if="property.property.id == 25">´
+                  <h3></h3>
                   <div id="videobereich">
-                    <iframe class="videoextern" width="560" height="315" src="https://www.youtube.com/embed/5l1bvu_M8-M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe class="videoextern" width="560" height="315" :src="https://www.youtube.com/embed/'+property.texts.value+'?rel=0'" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                   </div>
                 </span>
             </div>
