@@ -146,7 +146,7 @@ class StouneServiceProvider extends ServiceProvider
     }
      }, self::PRIORITY);
 
-     /* Überschreiben der Login Seite */
+     /* Überschreiben der Login Seite - GuestView */
      $dispatcher->listen('IO.Component.Import', function(ComponentContainer $container){
      if( $container->getOriginComponentTemplate() == 'Ceres::Customer.Components.GuestLogin')
      {
