@@ -1365,6 +1365,10 @@ button.btn.btn-block.btn-default {
   background: #222;
 }
 
+#order-history-tab .modal-title {
+  color: #fff;
+}
+
 /* Modal Content */
 .modal-contentH {
     position: relative;
