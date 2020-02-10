@@ -1092,6 +1092,14 @@ span.vat-porto-info.small.text-muted, .btn-labeled, .basket-preview .totals, spa
   border: 1px solid #ffffff;
 }
 
+.videoSingleItem {
+  padding: 1rem;
+}
+
+.videoSingleItem .col-sm {
+  padding-left: 1rem;
+}
+
 #SetInhalt {
     background: #222222 !important;
     padding: 2rem;
