@@ -1097,7 +1097,7 @@ span.vat-porto-info.small.text-muted, .btn-labeled, .basket-preview .totals, spa
 }
 
 .videoSingleItem .col-sm {
-  margin-left: 1rem;
+text-align: center;
 margin-bottom: 1rem;
 position: relative;
 }
