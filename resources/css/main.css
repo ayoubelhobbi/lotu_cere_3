@@ -1107,7 +1107,7 @@ position: relative;
   top: 50%;
    left: 50%;
    transform: translate(-50%,-50%);
-   width: 70px;
+   width: 80px;
 }
 
 .videoSingleItem .col-sm:hover {
