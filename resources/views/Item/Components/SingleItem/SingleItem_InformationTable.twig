@@ -26,7 +26,7 @@
                 <div class="my-4" v-html="currentVariation.texts.description">
                 </div>
 
-                <h3>Videobeschreibung</h3>
+                <h3 v-for="(property, index) in currentVariation.properties" v-if="property.group.id == 10">Videobeschreibung</h3>
 
                 <div class="row videoSingleItem">
 
