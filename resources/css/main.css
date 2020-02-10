@@ -1097,9 +1097,13 @@ span.vat-porto-info.small.text-muted, .btn-labeled, .basket-preview .totals, spa
 }
 
 .videoSingleItem .col-sm {
-text-align: center;
-margin-bottom: 1rem;
-position: relative;
+  text-align: center;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.mitBorderImageVide {
+  border: 3px solid #ffce00;
 }
 
 .imgCentering {
