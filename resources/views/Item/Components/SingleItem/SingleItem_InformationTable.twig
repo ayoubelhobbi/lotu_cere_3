@@ -31,6 +31,22 @@
                     <iframe class="videoextern" width="560" height="315" :src="'https://www.youtube.com/embed/'+property.texts.value+'?rel=0'" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                   </div>
                 </span>
+
+
+                <div v-for="(property, index) in currentVariation.properties" v-if="property.group.id == 10" class="videoGallerySingle" >
+                    <a v-bind:href="'https://www.youtube.com/embed/'+property.texts.value+'?rel=0'" data-lity>
+                        <img :src="'https://img.youtube.com/vi/'+property.texts.value+'/mqdefault.jpg'">
+                        <div class="overlayVideoGallery">Video ansehen</div>
+                    </a>
+
+                <div id="inline" style="background:#fff" class="lity-hide">
+                    Inline content
+                </div>
+              </div>
+
+
+
+
             </div>
         {% endif %}
 
