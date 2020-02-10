@@ -1102,14 +1102,6 @@ margin-bottom: 1rem;
 position: relative;
 }
 
-.videoSingleItem h3 {
-  text-align: center;
-padding: 1rem;
-background-color: #fff;
-color: #222;
-margin: 2rem 0rem 2rem 0rem;
-}
-
 .imgCentering {
   position: absolute;
   top: 50%;
