@@ -154,6 +154,21 @@ table.material_table thead {
   margin: 0 auto;
   display: block;
 }
+
+.sozialeNetzwerkeFooter li {
+    display: inline-grid;
+    list-style-type: none;
+    margin: 0 2rem 0 0rem;
+}
+
+.sozialeNetzwerkeFooter li:before {
+    content: "";
+}
+
+.sozialeNetzwerkeFooter i {
+    font-size: 2rem;
+}
+
 body > #vue-app, body > #vue-error {
   background-color: transparent;
 }
